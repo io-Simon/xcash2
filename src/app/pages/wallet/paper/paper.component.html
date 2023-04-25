@@ -1,0 +1,93 @@
+ 
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div fxFlex="20" id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">Paper Wallet</h1>
+    </div>
+    
+    <p id="subHeadingP">Secure and Instant Address Generation</p>
+
+    <div fxLayout="row" fxFlex="50" style="width:100%; height:100%; padding-top:2vh">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="start center">
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Offline solution</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Can be restored with a desktop or mobile wallet (see this <a style="margin: 0; padding: 0; " href="https://medium.com/@paulbugnot/how-to-restore-view-the-balance-of-your-paper-wallet-f3fee25e11bf">tutorial</a> )</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Quickest way to obtain an XCASH address</p>
+                </div>
+            </div>
+
+            <div style="width:75%;" fxLayout="row" id="buttonContainer" fxFlex="20" fxLayoutAlign="center start">
+                <div fxLayoutAlign="start start"  fxFlex="100">
+                    <button><a class="landingLink" href="https://xcash.foundation/paper-wallet-generator.html">Generate a wallet</a></button> 
+                </div>
+            </div>
+
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translate(-4vw, -5vh);" fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" width="55vw" height="55vw" style="z-index: 0; transform: translate(5vw, 15vh);"></ng-lottie>
+        </div>
+
+    </div>
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)"fxLayout="column" fxLayoutAlign="center center" fxFlex="100" ngStyle.xs="height:100%; padding-top:0vh" class="MobileHighestSectionDiv">
+
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center" fxFlex="23">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">Paper Wallet</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP" style="width:100%;">Secure and Instant Address Generation</p>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div style="width:100%" fxLayout="column" fxLayoutAlign="center center" > 
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading" >Offline solution</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Can be restored with a desktop or mobile wallet (see this <a style="margin: 0; padding: 0; " href="https://medium.com/@paulbugnot/how-to-restore-view-the-balance-of-your-paper-wallet-f3fee25e11bf">tutorial</a> )</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Quickest way to obtain an XCASH address</p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="10" style="padding-bottom:0vh" fxLayoutAlign="start start">
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" href="https://xcash.foundation/paper-wallet-generator.html">Generate a wallet</a></button> 
+    </div>
+
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;" fxLayoutAlign="center center">
+        <ng-lottie id="lottie1" [options]="options" width="75vw" height="75vw" style="z-index: 0; transform:translateX(-0vw);"></ng-lottie>
+    </div>
+
+</div>

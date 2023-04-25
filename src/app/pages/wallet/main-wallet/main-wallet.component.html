@@ -1,0 +1,28 @@
+<div id="scrollMethodDiv" (scroll)=" onScroll($event); onWindowScroll() ">
+    
+    <app-wallet-landing></app-wallet-landing>
+
+    <div #bottomNav ngStyle.xs="bottom: .2%" id="bottomNav" fxLayout="column">
+        <div id="bottomNavButtonContainer" fxLayout="row" fxFlex="100">
+            <button aria-label="navigation button to desktop wallet Section" fxFlex.xs="33.3" id="desktopButton"  (click)="scrollToSection(desktop)"> <span ngClass.xs="mobileBottomNavButton">Desktop</span> </button>
+            <button aria-label="navigation button to mobile wallet Section" fxFlex.xs="33.3"  id="mobileButton" (click)="scrollToSection(mobile)"><span ngClass.xs="mobileBottomNavButton">Mobile</span> </button>
+            <button aria-label="navigation button to paper Section" fxFlex.xs="33.3"  id="paperButton" (click)="scrollToSection(paper)"><span ngClass.xs="mobileBottomNavButton">Paper</span> </button>
+            <button aria-label="navigation button to Go Further Section" fxFlex.xs="33.3"  id="gofurtherButton" (click)="scrollToSection(gofurther)"><span ngClass.xs="mobileBottomNavButton">Go Further</span> </button>
+        </div>
+    </div>
+
+    <div #desktop>
+        <app-desktop></app-desktop>
+    </div>
+    <div #mobile>
+        <app-mobile></app-mobile>
+    </div>
+    <div #paper>
+        <app-paper></app-paper>
+    </div>
+
+    <div #gofurther>
+        <app-go-further></app-go-further>
+    </div>
+
+</div>

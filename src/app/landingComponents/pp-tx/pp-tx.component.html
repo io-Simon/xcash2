@@ -1,0 +1,109 @@
+
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" ngStyle.xs="height:100%" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">Flex X</h1>
+    </div>
+    
+    <p id="subHeadingP">Empowering You: Take Control of Your Funds with XCASH Tools</p>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign=" start center">
+
+            <div fxLayout="column" fxLayoutAlign="center center" > 
+                <div class="contentContainerMainLanding">
+                    <p id="pHeading">Flex-Private Send</p>
+                    <p class="mainContentP">With XCASH, a single wallet can handle both public and private transactions, providing anonymity when privacy is paramount, and transparency when necessary.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding">
+                    <p id="pHeading">Flex-Private Receive</p>
+                    <p class="mainContentP">XCASH offers the flexibility to receive exclusively private or public transactions to an address. In addition, unconditional transactions are set as the default, much like private send.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding">
+                    <p id="pHeading">Private Stake</p>
+                    <p class="mainContentP">For an enhanced user experience, XCASH offers private staking, a feature that is exclusive to our blockchain.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding">
+                    <p id="pHeading">Secured & Unfalsifiable</p>
+                    <p class="mainContentP">XCASH secures private and public transactions through cryptographically-signed, fixed-size ring transactions, creating an unfalsifiable record.</p>
+            </div>
+            </div>
+        
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translateX(-4vw);" fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" data-default-duration="4.183333333333334" data-duration="0"  width="18vw" height="18vw" data-default-duration="4.183333333333334" data-duration="0"  style="z-index: 0; transform:translateY(-15vh);"></ng-lottie>
+        </div>
+
+    </div>
+    <div fxLayout="row" id="buttonContainer" fxFlex="60" fxLayoutAlign="start start">
+        <button><a class="landingLink" href="https://docs.xcash.foundation/library/yellowpaper-hybrid-transactions">Hybrid Tx Research Paper</a></button>
+    </div>
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" fxFlex="100" ngStyle.xs="height:100%; padding-bottom:4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 ngClass.xs="ClassMobileSectionH1" id="SectionH1">Flex X</h1>
+        <p ngClass.xs="ClassMobileSubHeadingP" id="subHeadingP">Empowering You:<br> Take Control of Your Funds<br> with XCASH Tools</p>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div fxLayout="column" fxLayoutAlign="center center" > 
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Flex-Private Send</p>
+                    <p class="MobileP">With XCASH, a single wallet can handle both public and private transactions, providing anonymity when privacy is paramount, and transparency when necessary.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Flex-Private Receive</p>
+                    <p class="MobileP">XCASH offers the flexibility to receive exclusively private or public transactions to an address. In addition, unconditional transactions are set as the default, much like private send.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Private Stake</p>
+                    <p class="MobileP">For an enhanced user experience, XCASH offers private staking, a feature that is exclusive to our blockchain.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Secured & Unfalsifiable</p>
+                    <p class="MobileP">XCASH secures private and public transactions through cryptographically-signed, fixed-size ring transactions, creating an unfalsifiable record.</p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="10" style="padding-bottom:4vh" fxLayoutAlign="start start">
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" href="https://docs.xcash.foundation/library/yellowpaper-hybrid-transactions">Hybrid Tx Research Paper</a></button>
+    </div>
+
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;" fxLayoutAlign="center center">
+        <ng-lottie id="lottie1" [options]="options" width="25vw" height="25vw" style="z-index: 0; transform:translateY(-0vh);"></ng-lottie>
+    </div>
+
+</div>

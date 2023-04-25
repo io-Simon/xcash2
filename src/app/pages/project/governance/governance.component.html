@@ -1,0 +1,139 @@
+<div *ngIf="(screenWidth >= 600)" class="HighestSectionDiv" fxLayoutAlign="center center" fxLayout="column">
+
+    <div fxLayout="column" id="headlineContainer" fxLayoutAlign="center center"  >
+        <h1 id="SectionH1">Consensus</h1>
+        <p id="subHeadingP">50 nodes working in unison to provide unparalleled capability</p>
+    </div>
+
+    <div fxFlex="80"  fxLayoutAlign="center center"  fxLayout="row" style="height:100%; width: 100%; ">
+        <div fxLayout="column" fxFlex="20" style="height:100%; width: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" fxLayoutAlign="center center" style="height:100%; width: 100%">
+        
+
+            <div fxLayout="column" fxLayoutAlign="start center" style="padding-bottom: 1vh" > 
+                <div class="contentContainerMainLanding" style="width:60%; height: 100%">
+                    <p id="pHeading">Secured</p>
+                    <p class="mainContentP">Secured by the top 50 elected delegates anyone can run an XCASH node and become a delegate, but to be able to forge new blocks, secure the network, and earn the block reward, you will need to be voted into the top 50 by other members of the community. Becoming a delegate is ambitious; reaching and keeping a forging spot is rewarding but can be taken out at any time.</p>
+                </div>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="center center">
+
+                <div fxLayout="column" fxFlex="33" style="width:100%; height: 100%" > 
+                    <div class="contentContainerMainLanding" style="width:100%; height: 100%">
+                        <p id="pHeading">Staking</p>
+                        <p class="mainContentP">The delegates are elected by the community. Each person can attribute a stake of a minimum of 2M XCASH to a delegate to represent a weighted vote. Delegates then distribute a fraction of the block reward to their voters to remunerate them. Additionally, the voter's&#x27; stake never leaves their wallet thanks to the use of cryptographic reserve proofs; you stay in control of your XCASH at all time.</p>
+                    </div>
+                </div>
+
+                <div fxLayoutAlign="center center" fxFlex="33">
+                    <ng-lottie id="lottie1" [options]="options2" class="round-animation" width="18vw" height="18vw"></ng-lottie>
+                </div>
+         
+                <div fxLayout="column" fxFlex="33" style="width:100%; height: 100%"> 
+                    <div class="contentContainerMainLanding" style="width:100%; height: 100%">
+                        <p id="pHeading">DBFT</p>
+                        <p class="mainContentP">Using a DBFT communication system to guarantee a 67% consensus, and a verifiable randomized selection of a block producer to avoid delegate targeted attacks, everything has been implemented to improve the security of the network.</p>
+                    </div>
+                </div>
+
+        </div>
+                
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="height:100%; width: 100%; "></div>
+    </div>
+
+
+    <!--
+
+        <div class="column-6">
+          <ul role="list" class="list-6">
+            <li class="consensus-item"><strong>Secured by the top 50 elected delegates<br></strong>Anyone can run an XCASH node and become a delegate. But to be able to forge new blocks, secure the network, and earn the block reward, you will need to be voted into the top 50 by other members of the community. Becoming a delegate is ambitious; reaching and keeping a forging spot is rewarding but can be taken out at any time. <strong><br></strong></li>
+            <li class="consensus-item"><strong>Staking &amp; Voting<br></strong>The delegates are elected by the community. Each people can attribute a stake of a minimum of 2M XCASH to a delegate to represent a weighted vote. Delegates then distribute a fraction of the block reward to their voters to remunerate them.<br>Additionally, the voters&#x27; stake never leave their wallet thanks to the use of cryptographic reserve proofs; you stay in control of your XCASH at all time.</li>
+            <li class="consensus-item"><strong>Improved security<br></strong>Using a DBFT communication system to guarantee a 67% consensus, and a verifiable randomized selection of a block producer to avoid delegates targeted attacks, everything has been implemented to improve the security of the network.</li>
+          </ul>
+  -->
+
+  
+
+
+      <div fxLayout="row" id="buttonContainer" fxFlex="10" fxLayoutAlign="center start">
+        <div fxLayoutAlign="start start"  fxFlex="50">
+            <button><a class="landingLink" target="_blank" href="https://docs.xcash.foundation/dpops/get-started">Become a Delegate</a></button> 
+        </div>
+        <div fxLayoutAlign="start start" fxFlex="50">
+            <button><a class="landingLink" target="_blank" href="./../../../assets/downloads/XCASH_Yellowpaper_DPoPS.pdf">Yellow Paper</a></button> 
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" class="MobileHighestSectionDiv" fxLayoutAlign="center center" fxLayout="column">
+
+    <div fxLayout="column" id="MobileheadlineContainer" fxLayoutAlign="center center"  >
+        <h1 id="heading">Consensus</h1>
+        <p class="MobileP">50 nodes working in unison to provide unparalleled capability</p>
+    </div>
+
+    <div fxFlex="100"  fxLayoutAlign="center center"  fxLayout="row" style="height:100%; width: 100%; ">
+
+        <div fxLayout="column" fxFlex="90" fxLayoutAlign="center center" style="height:100%; width: 100%">
+
+            <div fxLayout="column"  fxLayoutAlign="start center" style="padding-bottom: 1vh; width:100%; height:100%" > 
+                <div class="MobileContentContainerMainLanding" style="width:60%; height: 100%">
+                    <p id="MobilepHeading">Secured</p>
+                    <p class="MobileMainContentP">Secured by the top 50 elected delegates anyone can run an XCASH node and become a delegate, but to be able to forge new blocks, secure the network, and earn the block reward, you will need to be voted into the top 50 by other members of the community. Becoming a delegate is ambitious; reaching and keeping a forging spot is rewarding but can be taken out at any time.</p>
+                </div>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="center center" style=" width:100%; height:100%">
+
+                <div fxLayout="column" fxFlex="33" style="width:100%; height: 100%" > 
+                    <div class="MobileContentContainerMainLanding" style="width:100%; height: 100%">
+                        <p id="MobilepHeading">Staking</p>
+                        <p class="MobileMainContentP">The delegates are elected by the community. Each person can attribute a stake of a minimum of 2M XCASH to a delegate to represent a weighted vote. Delegates then distribute a fraction of the block reward to their voters to remunerate them. Additionally, the voter's&#x27; stake never leaves their wallet thanks to the use of cryptographic reserve proofs; you stay in control of your XCASH at all time.</p>
+                    </div>
+                </div>
+
+                <div fxLayoutAlign="center center" fxFlex="33" style=" width:100%; height:100%">
+                    <ng-lottie id="lottie1" [options]="options2" class="round-animation" width="26vw" height="26vw"></ng-lottie>
+                </div>
+         
+                <div fxLayout="column" fxFlex="33" style="width:100%; height: 100%"> 
+                    <div class="MobileContentContainerMainLanding" style="width:100%; height: 100%; padding-top:2vh; padding-bottom:2vh;">
+                        <p style="transform: translateY(-1.3vh)" id="MobilepHeading">DBFT</p>
+                        <p style="transform: translateY(-1.3vh)" class="MobileMainContentP">Using a DBFT communication system to guarantee a 67% consensus, and a verifiable randomized selection of a block producer to avoid delegate targeted attacks, everything has been implemented to improve the security of the network.</p>
+                    </div>
+                </div>
+
+            </div>
+                
+        </div>
+
+        
+    </div>
+
+
+
+    <div fxLayout="column" class="MobileButtonContainer" fxFlex="10" style="padding-bottom:4vh" fxLayoutAlign="center center">
+        <div fxFlex="50" fxLayoutAlign="center center" style="width:100%; padding-bottom: 1vh">
+            <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="https://docs.xcash.foundation/dpops/get-started">Become a Delegate</a></button>
+        </div>
+        <div fxFlex="50" fxLayoutAlign="center center" style="width:100%">
+            <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="./../../../assets/downloads/XCASH_Yellowpaper_DPoPS.pdf">Yellow Paper</a></button>
+        </div>
+    </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,109 @@
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">Pub X </h1>
+    </div>
+    
+    <p id="subHeadingP">It's simple and easy to use, even for beginners.</p>
+
+    <div  fxLayout="row" fxFlex="100" style="width:100%;">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" fxLayoutAlign=" start center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Public Transactions Only</p>
+                    <p class="mainContentP">Choose to receive only Public transactions to your wallet address. This means your transactions are visible to everyone on the network and can be tracked by anyone.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding">
+                    <p id="pHeading">Unique Transaction Names</p>
+                    <p class="mainContentP">With our system, you can give your transactions a unique name using a Public (pxcash) address. This makes it easy to track and manage your transactions without any complexity.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding">
+                    <p id="pHeading">Multiple Address Options</p>
+                    <p class="mainContentP">When you register a Public name, you get access to three different addresses: Public (pxcash), Private (sxcash), and Regular (xcash). This gives you the flexibility to choose the right address for your needs.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding">
+                    <p id="pHeading">Simplify Your Transactions</p>
+                    <p class="mainContentP">Our Public TX 2.0 system is designed to simplify complex transaction challenges. Join our community today and start enjoying easy, secure transactions!</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translate(-6vw, 0vh); " fxLayoutAlign="end end">
+            <ng-lottie [options]="options" width="23vw" height="23vw" style="z-index: 0; transform: translateY( 0vh);"></ng-lottie>
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="60"  fxLayoutAlign="start start">
+        <button><a class="landingLink" href="https://docs.xcash.foundation/remotedata/get-started">Public TX 2.0 paper</a> </button>
+    </div>
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)"fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">Pub X</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">It's simple and easy to use,<br> even for beginners.</p>
+    </div>
+    
+    <div fxLayout="row" fxFlex="100" style="width:100%;" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" fxLayoutAlign="center center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Public Transactions Only</p>
+                    <p class="MobileP">Choose to receive only Public transactions to your wallet address. This means your transactions are visible to everyone on the network and can be tracked by anyone.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Unique Transaction Names</p>
+                    <p class="MobileP">With our system, you can give your transactions a unique name using a Public (pxcash) address. This makes it easy to track and manage your transactions without any complexity.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Multiple Address Options</p>
+                    <p class="MobileP">When you register a Public name, you get access to three different addresses: Public (pxcash), Private (sxcash), and Regular (xcash). This gives you the flexibility to choose the right address for your needs.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Simplify Your Transactions</p>
+                    <p class="MobileP">Our Public TX 2.0 system is designed to simplify complex transaction challenges. Join our community today and start enjoying easy, secure transactions!</p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="60" fxLayoutAlign="start start">
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" href="https://docs.xcash.foundation/remotedata/get-started">Public TX 2.0 paper</a> </button>
+    </div>
+
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translate(-5vw, 0vh);" fxLayoutAlign="center center">
+        <ng-lottie [options]="options" width="40vw" height="40vw" style="z-index: 0;;"></ng-lottie>
+    </div>
+</div>

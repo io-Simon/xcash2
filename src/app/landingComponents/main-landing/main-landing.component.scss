@@ -1,0 +1,241 @@
+#bottomNav{
+    position: fixed;
+    bottom: 0%;
+    z-index:5;
+    transition: opacity 1.2s;
+    width:99%
+}
+
+button{
+    width:100% !important;
+    height: 25px;
+    background: #1f1f1f;
+    border-left: white 1px solid;
+    border-right: white 1px solid;
+}
+
+button:focus{
+    //background: white;
+    //color: #1f1f1f
+}
+
+#scrollMethodDiv{
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.mobileBottomNavButton{
+    font-size:3vw;
+    width: 100%;
+    height: 100%;
+}
+
+#overviewButton:focus > #MobileOverviewButtonSpan:after {
+    content: 'OverView';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    bottom: 100%;
+    left: 0%;
+    position:absolute
+}
+
+#MobileOverviewButtonSpan{
+
+}
+
+#flexxButton:focus > #MobileFlexxButtonSpan:after{
+    content: 'Flex X';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:15%;
+    bottom: 100%;
+    left: 6%;
+    position:absolute
+}
+
+#MobileDpopsButtonSpan{
+
+}
+
+#dpopsButton:focus > #MobileDpopsButtonSpan:after{
+    content: 'DPOPS';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:15%;
+    bottom: 100%;
+    left: 13%;
+    position:absolute
+}
+
+#MobilePubxButtonSpan{
+
+}
+
+#pubxButton:focus > #MobilePubxButtonSpan:after{
+    content: 'Pub X';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:15%;
+    bottom: 100%;
+    left: 23%;
+    position:absolute
+}
+
+#MobileEcoxButtonSpan{
+
+}
+
+#ecoxButton:focus > #MobileEcoxButtonSpan:after{
+    content: 'Eco X';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:15%;
+    bottom: 100%;
+    left: 31%;
+    position:absolute
+}
+
+#MobileStakeButtonSpan{
+
+}
+
+#stakeButton:focus > #MobileStakeButtonSpan:after{
+    content: 'Stake';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:15%;
+    bottom: 100%;
+    left: 37%;
+    position:absolute
+}
+
+#MobileXpaymentButtonSpan{
+
+}
+
+#xpaymentButton:focus > #MobileXpaymentButtonSpan:after{
+    content: 'X Payment';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:26%;
+    text-align: left;
+    bottom: 100%;
+    left: 44%;
+    position:absolute
+}
+
+#MobileXswapButtonSpan{
+
+}
+
+#xswapButton:focus > #MobileXswapButtonSpan:after{
+    content: 'X Swap';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    text-align: left;
+    width:20%;
+    bottom: 100%;
+    left: 53%;
+    position:absolute
+}
+
+#MobileWxcashButtonSpan{
+
+}
+
+#wxcashButton:focus > #MobileWxcashButtonSpan:after{
+    content: 'WXCASH';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:15%;
+    bottom: 100%;
+    left: 59%;
+    position:absolute
+}
+
+#MobileXpyButtonSpan{
+
+}
+
+#xpyButton:focus > #MobileXpyButtonSpan:after{
+    content: 'X Py';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:11%;
+    bottom: 100%;
+    left: 64%;
+    position:absolute
+}
+
+#MobileSidechainsButtonSpan{
+
+}
+
+#sidechainsButton:focus > #MobileSidechainsButtonSpan:after{
+    content: 'Sidechains';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:20%;
+    text-align: left;
+    bottom: 100%;
+    left: 71%;
+    position:absolute
+}
+
+#MobileFoundationButtonSpan{
+
+}
+
+#foundationButton:focus > #MobileFoundationButtonSpan:after{
+    content: 'Foundation';
+    background: black;
+    color: white;
+    text-align: left;
+    font-size: 5vw;
+    width:20%;
+    bottom: 100%;
+    left: 73%;
+    position:absolute
+}
+
+#MobileMetricsButtonSpan{
+
+}
+
+#metricsButton:focus > #MobileMetricsButtonSpan:after{
+    content: 'Metrics';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:15%;
+    bottom: 100%;
+    left: 80%;
+    position:absolute
+}
+
+#MobileGofurtherButtonSpan{
+
+}
+
+#gofurtherButton:focus > #MobileGofurtherButtonSpan:after{
+    content: 'Go Further';
+    background: black;
+    color: white;
+    font-size: 5vw;
+    width:25%;
+    text-align: left;
+    bottom: 100%;
+    left: 75%;
+    position:absolute
+}

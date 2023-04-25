@@ -1,0 +1,141 @@
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">X Py</h1>
+    </div>
+    
+    <p id="subHeadingP">Powering Crypto Development</p>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="row" fxFlex="60" style="width:100%; height: 100%; transform: translateX(0vw)" fxLayoutAlign=" center center">
+
+            <div fxLayout="column" fxFlex="50" id="mainContent" style="width:100%; height: 100%; transform: translateX(5vw)" fxLayoutAlign=" center center">
+
+                <div fxLayout="column" fxLayoutAlign="center start" > 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">XCASH in Python</p>
+                        <p class="mainContentP">Unlock XCASH's potential with our Python tools. Designed for developers, Our range of utilities, such as RPC management and Blockchain Explorer API wrapper, allows you to maximize your XCASH earnings.</p>
+                    </div>
+                </div>
+
+                <div fxLayout="column" fxLayoutAlign="center start" class="topDivContentContainerLanding"> 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">RPC</p>
+                        <p class="mainContentP">Effortlessly manage your XCASH coins and delegate voting with our intuitive RPC management system. Our system simplifies the process, allowing you to take control of your investments with ease.</p>
+                    </div>
+                </div>
+
+                <div fxLayout="column" fxLayoutAlign="center start" class="topDivContentContainerLanding"> 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">Utilities</p>
+                        <p class="mainContentP">Take control of your investments and simplify your crypto experience with our management utilities. Our range includes full wallet, daemon, and DPOPS management, making it easier than ever to manage your XCASH experience.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div fxLayout="column" fxFlex="50" id="mainContent" style="width:100%; height: 100%; transform: translateX(.2vw)" fxLayoutAlign=" center center">
+
+                <div fxLayout="column" fxLayoutAlign="center start"  style=" width:100%; "> 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">Blockchain Explorer API Wrapper</p>
+                        <p class="mainContentP">Dive deep into XCASH data with our Blockchain Explorer API wrapper. Our wrapper provides an unparalleled experience, giving you the insights you need to make informed investments.</p>
+                    </div>
+                </div>
+
+                <div fxLayout="column" fxLayoutAlign="center start" class="topDivContentContainerLanding"> 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">Delegate Explorer API Wrapper</p>
+                        <p class="mainContentP">Effortlessly track and optimize your XCASH investments with our Delegate Explorer API wrapper, providing efficient data analysis to help you achieve your investment objectives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(-4vw);" fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" width="18vw" height="18vw" style="z-index: 0; transform:translateY(-3vh);"></ng-lottie>
+        
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="60" fxLayoutAlign="start start">
+        <div fxFlex="50">
+            <button> <a class="landingLink" href="https://github.com/X-CASH-official/XCASH-Ecosystem-api-wrapper">Github</a></button> 
+        </div>
+        <div fxFlex="50">
+            <button> <a class="landingLink" href="https://pypi.org/project/xcash/0.3.0/">PyPi</a></button> 
+        </div>
+    </div>
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">X Py</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">Powering Crypto Development</p>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">XCASH in Python</p>
+                    <p class="MobileP">Unlock XCASH's potential with our Python tools. Designed for developers, Our range of utilities, such as RPC management and Blockchain Explorer API wrapper, allows you to maximize your XCASH earnings.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">RPC</p>
+                    <p class="MobileP">Effortlessly manage your XCASH coins and delegate voting with our intuitive RPC management system. Our system simplifies the process, allowing you to take control of your investments with ease.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Utilities</p>
+                    <p class="MobileP">Take control of your investments and simplify your crypto experience with our management utilities. Our range includes full wallet, daemon, and DPOPS management, making it easier than ever to manage your XCASH experience.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Blockchain Explorer API Wrapper</p>
+                    <p class="MobileP">Dive deep into XCASH data with our Blockchain Explorer API wrapper. Our wrapper provides an unparalleled experience, giving you the insights you need to make informed investments.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Delegate Explorer API Wrapper</p>
+                    <p class="MobileP">Effortlessly track and optimize your XCASH investments with our Delegate Explorer API wrapper, providing efficient data analysis to help you achieve your investment objectives.</p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div fxLayout="column" class="MobileButtonContainer" fxFlex="60" style="padding-bottom:4vh" fxLayoutAlign="center center">
+        <div fxFlex="50" fxLayoutAlign="center center" style="width:100%; padding-bottom: 1vh">
+            <button class="MobileButton"><a class="landingLink MobileLandingLink" href="https://github.com/X-CASH-official/XCASH-Ecosystem-api-wrapper">Github</a></button>
+        </div>
+        <div fxFlex="50" fxLayoutAlign="center center" style="width:100%">
+            <button class="MobileButton"><a class="landingLink MobileLandingLink" href="https://pypi.org/project/xcash/0.3.0/">PyPi</a></button>
+        </div>
+    </div>
+
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translateX(0vw);" fxLayoutAlign="center center">
+        <ng-lottie [options]="options" id="lottie1" width="25vw" height="25vw" style="z-index: 0; transform:translateY(0vh);"></ng-lottie>
+    </div>
+
+</div>

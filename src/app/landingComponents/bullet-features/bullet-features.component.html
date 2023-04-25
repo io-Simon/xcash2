@@ -1,0 +1,86 @@
+
+<div *ngIf="(screenWidth >= 600)"fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">Overview</h1>
+    </div>
+    
+    <p id="subHeadingP">Open Source & Building An Open Transaction System</p>
+   
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%">
+
+        <div fxLayout="Column" fxFlex="20" style="width:100%; height: 100%; "></div>
+        <div fxLayout="Column" fxFlex="60" style="width:100%; height: 100%;" fxLayoutAlign="center start">
+          
+                <ul role="list">
+                  <li><span >Private/Public choice</span></li>
+                  <li><span >Decentralized, anonymous, & fair governance</span></li>
+                  <li><span >Dynamic block sizes</span></li>
+                  <li><span >Dynamic Decentralized database</span></li>
+                  <li><span >Decentralized Sidechains</span></li>
+                  <li><span >Multi-language Smart contracts</span></li>
+                  <li><span >Cross-chain interoperability</span></li>
+                  <li><span >String CTs & CoinJoin</span></li>
+                  <li><span >Unique Public addresses</span></li>
+                  <li><span >Python library</span></li>
+                  <li><span >JS library</span></li>
+                  <li><span >dAPPS & NFTs</span></li>
+                  <li><span >X-DEX</span></li>
+                  <li><span >Instant payments</span></li>
+                  <li><span >Anonymous voting protocol</span></li>
+                  <li><span >Social account tipping & Merchant system</span></li>
+                </ul>
+              </div>
+
+        <div fxLayout="Column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(-5vw)" fxLayoutAlign="start end">
+            <ng-lottie aria-label="An animation " id="lottie1"[options]="options" data-default-duration="4.183333333333334" data-duration="0"  width="20vw" height="20vw" data-default-duration="4.183333333333334" data-duration="0"  style="z-index: 0; transform:translateY(-12vh);"></ng-lottie>     
+        </div>
+
+
+    </div>
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom:4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="MobileSectionH1">Overview</h1>
+    </div>
+    
+    <p id="MobileSubHeadingP">Open Source & Building<br>An Open Transaction System</p>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="Column" fxFlex="60" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+          
+                <ul role="list">
+                  <li class="MobileLiOverview"><span >Private/Public choice</span></li>
+                  <li class="MobileLiOverview"><span >Decentralized, anonymous, & fair governance</span></li>
+                  <li class="MobileLiOverview"><span >Dynamic block sizes</span></li>
+                  <li class="MobileLiOverview"><span >Dynamic Decentralized database</span></li>
+                  <li class="MobileLiOverview"><span >Decentralized Sidechains</span></li>
+                  <li class="MobileLiOverview"><span >Multi-language Smart contracts</span></li>
+                  <li class="MobileLiOverview"><span >Cross-chain interoperability</span></li>
+                  <li class="MobileLiOverview"><span >String CTs & CoinJoin</span></li>
+            
+                  <li class="MobileLiOverview"><span >Unique Public addresses</span></li>
+                  <li class="MobileLiOverview"><span >Python library</span></li>
+                  <li class="MobileLiOverview"><span >JS library</span></li>
+                  <li class="MobileLiOverview"><span >dAPPS & NFTs</span></li>
+                  <li class="MobileLiOverview"><span >X-DEX</span></li>
+                  <li class="MobileLiOverview"><span >Instant payments</span></li>
+                  <li class="MobileLiOverview"><span >Anonymous voting protocol</span></li>
+                  <li class="MobileLiOverview"><span >Social media wallet</span></li>
+                </ul>
+              </div>
+
+    </div>
+        <div fxLayout="row" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(0vw)" fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" width="40vw" height="40vw" style="z-index: 0; transform:translateY(-0vh);"></ng-lottie>
+        </div>
+
+
+
+</div>

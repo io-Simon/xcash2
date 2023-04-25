@@ -1,0 +1,235 @@
+<div *ngIf="(screenWidth >= 600)"  fxLayout="column" fxLayoutAlign="center center" fxFlex="100" class="HighestSectionDiv">
+
+  <div id="headlineContainer" fxFlex="20" fxLayout="column" fxLayoutAlign="center center">
+    <h1 id="SectionH1">Roadmap</h1>
+    <p id="subHeadingP">Building A Better Web 3</p>
+  </div>
+
+  <div fxLayout="row" fxFlex="90" style="width:100%; height:100%">
+    <div fxLayout="column" fxFlex="4" fxLayoutAlign="end end" style="width:100%; height: 100%; "></div>
+    <div fxLayout="column"  fxFlex="85" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center" fxLayoutGap="0">
+      <!--block 1-->    
+      <div fxLayout="column" fxLayoutAlign="center center" fxFlex="45" id="block1">
+        <div fxLayout="row" style=" height: 100%; width: 100%" >
+          <div fxLayout="column" fxFlex="15" id="sidePanel1" class="sectionHeadlineText" fxLayoutAlign="start start"> Coming </div>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1vh" fxFlex="85">
+              <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding" style="border-top: #fa741c 8px solid"> 
+                  <div fxLayout="row">
+                    <p fxFlex="90" id="pHeading">Smart Contracts</p>
+                    <button fxFlex="10" (click)="toggleContent(content1)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                  </div>
+                  <p #content1  id="content1" class="mainContentP">Our Smart Contracts approach combines Monero's obfuscation and Bitcoin's transparency for unrivaled privacy. This sets a new standard for blockchain security and confidentiality.</p>    
+                </div>
+              </div>
+      
+              <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                  <div class="contentContainerMainLanding"> 
+                    <div fxLayout="row">
+                      <p fxFlex="90" id="pHeading">Sidechains </p>
+                      <button fxFlex="10" (click)="toggleContent(content2)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                    </div>
+                    <p #content2 id="content2" class="mainContentP">Our cutting-edge approach enhances scalability, flexibility, and privacy by enabling off-chain transactions while maintaining the security of the main blockchain.</p>
+                  </div>
+              </div>
+  
+              <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                  <div class="contentContainerMainLanding"> 
+                    <div fxLayout="row">
+                      <p fxFlex="90" id="pHeading">NFTs</p>
+                      <button fxFlex="10" (click)="toggleContent(content3)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                    </div>
+                    <p #content3 id="content3" class="mainContentP">NFT integration in our layer-2 offers new monetization and interaction opportunities with digital assets. It provides unique asset representation, exciting possibilities for creators, collectors, and investors.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!--block 2-->
+      <div fxLayout="column" fxFlex="20" fxLayoutAlign="center center" style="transform: translateY(0vh); " id="block2">
+        <div fxLayout="row"  style=" height: 100%; width: 100%" >
+          <div fxLayout="column" fxFlex="15" class="sectionHeadlineText" id="sidePanel2" fxLayoutAlign="start start"> Current </div>
+            <div fxLayout="column" fxFlex="85" fxLayoutAlign="center center">
+              <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                  <div class="contentContainerMainLanding contentContainerMainLandingBlock2" style="border-top: white 8px solid"  > 
+                    <div fxLayout="row">
+                      <p fxFlex="90" style="color: white" id="pHeading">Sidechain Payments</p>
+                      <button fxFlex="10" style="color: white" (click)="toggleContent(content4)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                    </div>
+                    <p #content4  id="content4" class="mainContentP">On the same basis of the Lightning Network on Bitcoin, sidechain payments enable quicker payment processing on the X-Cash blockchain.</p>
+                  </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+      <!--block 3-->
+      <div fxLayout="column" fxFlex="45" fxLayoutAlign="center center" id="block3" >
+        <div fxLayout="row" style=" height: 100%; width: 100%" >
+          <div fxLayout="column" fxFlex="15" id="sidePanel3" class="sectionHeadlineText" fxLayoutAlign="start start">Done</div>
+          <div fxLayout="column" fxLayoutAlign="center center" fxFlex="85" fxLayoutGap="1vh">
+              <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+          
+                <div class="contentContainerMainLanding contentContainerMainLandingBlock3"  style="border-top: #1189A5 8px solid"> 
+                  <div fxLayout="row">
+                    <p fxFlex="90" style="color: #1189A5" id="pHeading">WXCASH</p>
+                    <button style="color: #1189A5" fxFlex="10" (click)="toggleContent(content5)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                  </div>
+                  <p #content5  id="content5" class="mainContentP">Wrapped XCASH is an ERC20 bridge for X-Cash, integrating X-Cash with Ethereum and Polygon. X Swap's secure platform is developing a solution to swap XCASH for WXCASH on Polygon.</p>
+                </div>
+              </div>
+  
+              <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                  <div class="contentContainerMainLanding contentContainerMainLandingBlock3"> 
+                    <div fxLayout="row">
+                      <p fxFlex="90" style="color: #1189A5" id="pHeading">Flexprivacy </p>
+                      <button style="color: #1189A5" fxFlex="10" (click)="toggleContent(content6)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                    </div>
+                      <p #content6  id="content6" class="mainContentP">Flexprivacy is a unique feature enabling both public and private transactions on the same network, on a per-transaction basis. Every transaction made public is viewable on the X-Cash explorer in a similar fashion as on the Bitcoin chain.</p>
+                  </div>
+              </div>
+  
+              <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding contentContainerMainLandingBlock3"> 
+                  <div fxLayout="row">
+                    <p fxFlex="90" style="color: #1189A5" id="pHeading">DPOPS</p>
+                    <button style="color: #1189A5" fxFlex="10" (click)="toggleContent(content7)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                  </div>
+                  <p #content7  id="content7" class="mainContentP">Delegated-Proof-Of-Private-Stake (DPOPS) is a new blockchain consensus developed on top of the cryptonote protocol to tackle the caveats of POW consensus.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div fxLayout="column" fxFlex="15" style="width:100%; height: 100%; "></div>
+      <!--div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translate(-4vw, 4vh); " fxLayoutAlign="end end">
+          <ng-lottie id="lottie1" [options]="options" width="55vw" height="55vw" style="z-index: 0; transform: translate(3vw, 15vh);"></ng-lottie>
+      </div-->
+
+</div>
+</div>
+
+
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)"  fxLayout="column" fxLayoutAlign="center center" fxFlex="100" class="HighestSectionDiv">
+
+  <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+    <h1 class="ClassMobileSectionH1" id="SectionH1">Roadmap</h1>
+    <p class="ClassMobileSubHeadingP" id="subHeadingP">Building A Better Web 3</p>
+  </div>
+
+  <div fxLayout="row" fxFlex="90" style="width:100%; height:100%">
+    <div fxLayout="column" fxFlex="4" fxLayoutAlign="end end" style="width:100%; height: 100%; "></div>
+    <div fxLayout="column"  fxFlex="85" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center" fxLayoutGap="0">
+      <!--block 1-->    
+      <div fxLayout="column" fxLayoutAlign="center center" fxFlex="45" id="block1">
+        <div fxLayout="row" style=" height: 100%; width: 100%" >
+          <div fxLayout="column" fxFlex="15" id="sidePanel1" class="MobileSectionHeadlineText" fxLayoutAlign="start start"> Coming </div>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1vh" fxFlex="85">
+              <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding" style="border-top: #fa741c 8px solid"> 
+                  <div fxLayout="row">
+                    <p fxFlex="90" id="MobilePHeading">Smart Contracts</p>
+                    <button fxFlex="10" (click)="toggleContent(content1)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                  </div>
+                  <p #content1  id="content1" class="MobileMainContentP">Our Smart Contracts approach combines Monero's obfuscation and Bitcoin's transparency for unrivaled privacy. This sets a new standard for blockchain security and confidentiality.</p>    
+                </div>
+              </div>
+      
+              <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                  <div class="contentContainerMainLanding"> 
+                    <div fxLayout="row">
+                      <p fxFlex="90" id="MobilePHeading">Sidechains </p>
+                      <button fxFlex="10" (click)="toggleContent(content2)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                    </div>
+                    <p #content2 id="content2" class="MobileMainContentP">Our cutting-edge approach enhances scalability, flexibility, and privacy by enabling off-chain transactions while maintaining the security of the main blockchain.</p>
+                  </div>
+              </div>
+  
+              <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                  <div class="contentContainerMainLanding"> 
+                    <div fxLayout="row">
+                      <p fxFlex="90" id="MobilePHeading">NFTs</p>
+                      <button fxFlex="10" (click)="toggleContent(content3)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                    </div>
+                    <p #content3 id="content3" class="MobileMainContentP">NFT integration in our layer-2 offers new monetization and interaction opportunities with digital assets. It provides unique asset representation, exciting possibilities for creators, collectors, and investors.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!--block 2-->
+      <div fxLayout="column" fxFlex="20" fxLayoutAlign="center center" style="transform: translateY(0vh); " id="block2">
+        <div fxLayout="row"  style=" height: 100%; width: 100%" >
+          <div fxLayout="column" fxFlex="15" class="MobileSectionHeadlineText" id="sidePanel2" fxLayoutAlign="start start"> Current </div>
+            <div fxLayout="column" fxFlex="85" fxLayoutAlign="center center">
+              <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                  <div class="contentContainerMainLanding contentContainerMainLandingBlock2" style="border-top: white 8px solid"  > 
+                    <div fxLayout="row">
+                      <p fxFlex="90" style="color: white" id="MobilePHeading">Sidechain Payments</p>
+                      <button fxFlex="10" style="color: white" (click)="toggleContent(content4)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                    </div>
+                    <p #content4  id="content4" class="MobileMainContentP">On the same basis of the Lightning Network on Bitcoin, sidechain payments enable quicker payment processing on the X-Cash blockchain.</p>
+                  </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+      <!--block 3-->
+      <div fxLayout="column" fxFlex="45" fxLayoutAlign="center center" id="block3" >
+        <div fxLayout="row" style=" height: 100%; width: 100%" >
+          <div fxLayout="column" fxFlex="15" id="sidePanel3" class="MobileSectionHeadlineText" fxLayoutAlign="start start">Done</div>
+          <div fxLayout="column" fxLayoutAlign="center center" fxFlex="85" fxLayoutGap="1vh">
+              <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+          
+                <div class="contentContainerMainLanding contentContainerMainLandingBlock3"  style="border-top: #1189A5 8px solid"> 
+                  <div fxLayout="row">
+                    <p fxFlex="90" style="color: #1189A5" id="MobilePHeading">WXCASH</p>
+                    <button style="color: #1189A5" fxFlex="10" (click)="toggleContent(content5)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                  </div>
+                  <p #content5  id="content5" class="MobileMainContentP">Wrapped XCASH is an ERC20 bridge for X-Cash, integrating X-Cash with Ethereum and Polygon. X Swap's secure platform is developing a solution to swap XCASH for WXCASH on Polygon.</p>
+                </div>
+              </div>
+  
+              <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                  <div class="contentContainerMainLanding contentContainerMainLandingBlock3"> 
+                    <div fxLayout="row">
+                      <p fxFlex="90" style="color: #1189A5" id="MobilePHeading">Flexprivacy </p>
+                      <button style="color: #1189A5" fxFlex="10" (click)="toggleContent(content6)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                    </div>
+                      <p #content6  id="content6" class="MobileMainContentP">Flexprivacy is a unique feature enabling both public and private transactions on the same network, on a per-transaction basis. Every transaction made public is viewable on the X-Cash explorer in a similar fashion as on the Bitcoin chain.</p>
+                  </div>
+              </div>
+  
+              <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding contentContainerMainLandingBlock3"> 
+                  <div fxLayout="row">
+                    <p fxFlex="90" style="color: #1189A5" id="MobilePHeading">DPOPS</p>
+                    <button style="color: #1189A5" fxFlex="10" (click)="toggleContent(content7)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}</style><g><g><line class="st0" x1="8.5" y1="29" x2="50" y2="70.5"></line></g><g><line class="st0" x1="91.5" y1="29" x2="50" y2="70.5"></line></g></g></svg></button>
+                  </div>
+                  <p #content7  id="content7" class="MobileMainContentP">Delegated-Proof-Of-Private-Stake (DPOPS) is a new blockchain consensus developed on top of the cryptonote protocol to tackle the caveats of POW consensus.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div fxLayout="column" fxFlex="15" style="width:100%; height: 100%; "></div>
+      <!--div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translate(-4vw, 4vh); " fxLayoutAlign="end end">
+          <ng-lottie id="lottie1" [options]="options" width="55vw" height="55vw" style="z-index: 0; transform: translate(3vw, 15vh);"></ng-lottie>
+      </div-->
+
+</div>
+
+
+

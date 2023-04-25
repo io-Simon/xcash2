@@ -1,0 +1,148 @@
+
+<div *ngIf="(screenWidth >= 600)" class="HighestSectionDiv" fxLayout="column" fxLayoutAlign="center center">
+
+    <div fxLayout="column" id="headlineContainer" fxLayoutAlign="center center"  fxFlex="23" >
+        <h1 id="SectionH1">Mobile</h1>
+        <p id="subHeadingP">Carry your XCASH anywhere</p>
+
+    </div>
+    
+    <div fxLayout="column" fxFlex="70"  id="totalContentContainer" fxLayoutAlign="center center">
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%;" >
+                <div id="firstTabContainer" class="tabButtonContainer">
+                    <button id="firstTab" (click)="divToggle2('Minted'); firstTabColors()" data-w-tab="Tab 1" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131953" class="tabButton"><a>Android </a></button>
+                </div>
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; " >
+                <div fxLayout="row" fxFlex="100">
+
+                    <div fxFlex="100" *ngIf="divTab2 == 'Minted'"  fxLayout="column" data-w-tab="Tab 1" class="contentContainerPercent" fxLayoutGap="4vh">
+                        
+                        <h3 class="percentage">Wallet</h3>
+                        <div>
+                            <h4 class="paragraph">Version</h4>
+                            <p class="paragraph">v0.0.1-alpha</p>
+                        </div>
+
+                        <div style="padding-top:2vh">
+                            <h4 class="paragraph">SHA256</h4>
+                            <p  class="paragraph">D2F4DC59C3E8A2527411D471CE2F5D222D7EC894463647C1B3C20554C0524597</p>
+                        </div>
+
+                        <div>
+                            <h4 class="paragraphH4">⚠️</h4>
+                            <p class="paragraph"> This is an early access alpha release. Please read the instructions before using.</p>
+                        </div>
+
+                        <div id="buttonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/desktop-wallet/releases/download/v0.0.1-alpha/v0.0.1-alpha-xcash-gui-wallet-windows-x64.zip">Download</a></button>
+                        </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Airdrop')" data-w-tab="Tab 2" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131956" class="tabButton"><a>IOS</a></button>
+                </div>
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+                
+                <div fxLayout="row" fxFlex="100">
+
+                    <div fxFlex="100" *ngIf="divTab2 == 'Airdrop'"  fxLayout="column" data-w-tab="Tab 2" class="contentContainerPercent" fxLayoutGap="4vh">
+                        
+                        <h3 class="percentage">Unavailable</h3>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+
+       
+
+        </div>
+
+        
+    
+
+</div>
+     
+<!--Mobile-->      
+
+<div *ngIf="(screenWidth < 600)" class="MobileHighestSectionDiv" fxLayout="column" fxLayoutAlign="center center">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center" fxFlex="23">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">Mobile</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP" style="width:100%;">Carry your XCASH anywhere</p>
+    </div>
+
+    <div #MobileButtonTabs fxLayout="row" style="width:80%">
+
+        <div fxLayout="row" fxFlex="50" style="width:100%; height: 100%;" >
+            <div id="firstTabContainer" class="tabButtonContainer">
+                <button id="firstTab" (click)="divToggle2('Minted'); firstTabColors()" data-w-tab="Tab 1" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131953" class="tabButton"><a id="firstTabA">ANDROID</a></button>
+            </div>
+        </div>
+
+        <div fxLayout="row" fxFlex="50" style="width:100%; height: 100%; ">
+            <div class="tabButtonContainer">
+                <button (click)="divToggle2('Airdrop')" data-w-tab="Tab 2" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131956" class="tabButton"><a>IOS</a></button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--End of Mobile button tabs-->
+    
+    <div fxLayout="column" fxFlex="100"  id="MobileTotalContentContainer" fxLayoutAlign="center center">
+    
+        <div fxFlex="100" *ngIf="divTab2 == 'Minted'"  fxLayout="column" data-w-tab="Tab 1" class="MobileContentContainerPercent" fxLayoutGap="2vh">
+            
+            <h3 class="MobilePercentage">WALLET</h3>
+            <div>
+                <h4 class="MobileParagraph">Version</h4>
+                <p class="MobileParagraph">v0.0.1-alpha</p>
+            </div>
+
+            <div style="padding-top:2vh">
+                <h4 class="MobileParagraph">SHA256</h4>
+                <p class="MobileParagraphSha">D2F4DC59C3E8A2527411D471CE2<br>F5D222D7EC894463647C1B3C20554C0524597</p>
+            </div>
+
+            <div id="MobileButtonContainer" fxFlex="10">
+                <button> <a target="_blank" href="https://github.com/X-CASH-official/desktop-wallet/releases/download/v0.0.1-alpha/v0.0.1-alpha-xcash-gui-wallet-windows-x64.zip">Download</a></button>
+            </div>
+
+            <div>
+                <h4 class="MobileParagraphH4">⚠️</h4>
+                <p class="MobileParagraph"> This is an early access alpha release. Please read the instructions before using.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div fxLayout="column" style="width:80%; height: 100%;">
+
+        <div fxLayout="row" fxFlex="80">
+            <div fxFlex="100" *ngIf="divTab2 == 'Airdrop'"  fxLayout="column" data-w-tab="Tab 2" class="MobileContentContainerPercent">
+                <h3 class="MobilePercentage">UNAVAILABLE </h3>
+            <div>                    
+        </div>
+
+    </div>
+   
+
+</div>

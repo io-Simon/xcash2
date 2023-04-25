@@ -1,0 +1,94 @@
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">ECO X</h1>
+    </div>
+    
+    <p id="subHeadingP">Revolutionizing Energy Consumption in Blockchain</p>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="start center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">The Revolution</p>
+                    <p class="mainContentP">XCASH stands out from Proof-of-Work and POS networks with its minimal energy consumption. Unlike energy-intensive mining or wallet usage, XCASH eliminates these needs and provides a sustainable platform for developing blockchain applications.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Eco-Proof</p>
+                    <p class="mainContentP">Eco-Proof technology eliminates the need for devices to remain open to stake, instead allowing the voted-for delegate to distribute rewards. The reward status can be easily verified through our delegate explorer API.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">The Truth</p>
+                    <p class="mainContentP">Our commitment to sustainability is evident in our energy-efficient blockchain, which is estimated to consume less energy than four toasters.</p>
+                </div>
+            </div>        
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translate(-4vw, 4vh);" fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" width="18vw" height="18vw" style="z-index: 0; transform: translateY(-2vh);"></ng-lottie>
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="60"  fxLayoutAlign="start start">
+        <button><a class="landingLink" href="https://discord.gg/EXvTZTHUQ8">Save The Planet With Us</a></button>
+    </div>
+ 
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">ECO X</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">Revolutionizing Energy<br> Consumption in Blockchain</p>
+    </div>
+    
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="start center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">The Revolution</p>
+                    <p class="MobileP">XCASH stands out from Proof-of-Work and POS networks with its minimal energy consumption. Unlike energy-intensive mining or wallet usage, XCASH eliminates these needs and provides a sustainable platform for developing blockchain applications.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Eco-Proof</p>
+                    <p class="MobileP">Eco-Proof technology eliminates the need for devices to remain open to stake, instead allowing the voted-for delegate to distribute rewards. The reward status can be easily verified through our delegate explorer API.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">The Truth</p>
+                    <p class="MobileP">Our commitment to sustainability is evident in our energy-efficient blockchain, which is estimated to consume less energy than four toasters.</p>
+                </div>
+            </div>        
+        </div>
+
+    </div>
+
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="60" style="padding-bottom:4vh"  fxLayoutAlign="start start">
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" href="https://discord.gg/EXvTZTHUQ8">Save The Planet With Us</a></button>
+    </div>
+
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translate(0vw, 0vh);" fxLayoutAlign="center center">
+        <ng-lottie id="lottie1" [options]="options" width="25vw" height="25vw" style="z-index: 0; transform: translateY(0vh);"></ng-lottie>
+    </div>
+
+</div>

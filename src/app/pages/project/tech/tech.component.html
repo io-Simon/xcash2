@@ -1,0 +1,100 @@
+ 
+<div *ngIf="(screenWidth >= 600)"  fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">Tech</h1>
+    </div>
+    
+    <p id="subHeadingP">Our Mission Is To Make Web3 Private</p>
+
+    <div fxLayout="row" fxFlex="44" style="width:100%; height:100%">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="start center">
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Hybrid Transactions</p>
+                    <p class="mainContentP">We are offering the transparency of bitcoin transactions with Monero&#x27;s obfuscation to allow most privacy needs to be addressed.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">DPOPS </p>
+                    <p class="mainContentP">We have built a variant of the dPoS consensus protocol:<br>- Privacy-switch for stake used in the voting process<br>- Byzantine Fault Tolerant algorithm<br>- Verifiable Random Functions for the block producer selection process</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Sidechains &amp; Smart Contracts</p>
+                    <p class="mainContentP">We're developing our layer-2 solution to enhance our layer-1 technology with more scalability and use cases. Our delegates can host sidechains and execute smart contracts for additional yields, increasing the value of our ecosystem.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translate(-4vw, 4vh); " fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" width="55vw" height="55vw" style="z-index: 0; transform: translate(3vw, 17vh);"></ng-lottie>
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="20" fxLayoutAlign="center start">
+        <div fxLayoutAlign="start start"  fxFlex="100">
+            <button><a class="landingLink" href="https://github.com/X-CASH-official/" >Go To GitHub </a></button> 
+        </div>
+    </div>
+ 
+</div>
+
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">Tech</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">Our Mission Is To Make Web3 Private</p>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Hybrid Transactions</p>
+                    <p class="MobileP">We are offering the transparency of bitcoin transactions with Monero&#x27;s obfuscation to allow most privacy needs to be addressed.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">DPOPS</p>
+                    <p class="MobileP">We have built a variant of the dPoS consensus protocol:<br>- Privacy-switch for stake used in the voting process<br>- Byzantine Fault Tolerant algorithm<br>- Verifiable Random Functions for the block producer selection process</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Sidechains &amp; Smart Contracts</p>
+                    <p class="MobileP">We're developing our layer-2 solution to enhance our layer-1 technology with more scalability and use cases. Our delegates can host sidechains and execute smart contracts for additional yields, increasing the value of our ecosystem.</p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="60" style="padding-bottom: 4vh" fxLayoutAlign="start start">
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="https://github.com/X-CASH-official/" >Go To GitHub </a></button>
+    </div>
+
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translateX(0vw);" fxLayoutAlign="center center">
+        <ng-lottie [options]="options" id="lottie1" width="25vw" height="25vw" style="z-index: 0; transform:translateY(0vh);"></ng-lottie>
+    </div>
+
+</div>

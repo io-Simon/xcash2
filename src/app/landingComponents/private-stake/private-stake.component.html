@@ -1,0 +1,123 @@
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">Stake</h1>
+    </div>
+    
+    <p id="subHeadingP">Get XCASH Without Risking A Coin.</p>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%;"></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="start center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding">  
+                    <p id="pHeading">Easy Private Staking</p>
+                    <p class="mainContentP">Earn rewards with XCASH without risking your coins. Our private staking system lets you vote for a trusted node to help keep the network secure. You don't need any technical knowledge, just a reserve proof of your coins.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Keep Your Coins Safe</p>
+                    <p class="mainContentP">You never need to send your coins to earn a stake. You can keep your coins in your wallet and generate a reserve proof of your funds. This way, you retain full control of your coins while your reserve proof earns rewards for you.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Secure & Fair Rewards</p>
+                    <p class="mainContentP">Our system uses special technology to ensure a fair and secure network by randomly selecting block producers, providing everyone with an equal chance to earn rewards while preventing cheating.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Join Now & Start Earning</p>
+                    <p class="mainContentP">Our private staking system is easy to use and safe for beginner users. Join our community of XCASH holders today and start earning rewards with confidence!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(-4vw);" fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" width="18vw" height="18vw" style="z-index: 0; transform:translateY(0vh);"></ng-lottie>
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="60"   fxLayoutAlign="center start">
+        <div fxFlex="33">
+        <button> <a class="landingLink" href="https://delegates.xcash.foundation">Delegate Explorer</a></button></div>
+        <div fxFlex="33">
+        <button> <a class="landingLink" href="https://calculator.xcash.foundation">ROI Calculator</a></button></div>
+        <div fxFlex="33">
+        <button> <a class="landingLink" href="https://docs.xcash.foundation/dpops/vote-and-staking">Docs</a></button></div>
+    </div>  
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">Stake</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">Get XCASH<br> Without Risking A Coin.</p>
+    </div>
+    
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="MobileContentContainerMainLanding">  
+                    <p class="MobilePHeading">Easy Private Staking</p>
+                    <p class="MobileP">Earn rewards with XCASH without risking your coins. Our private staking system lets you vote for a trusted node to help keep the network secure. You don't need any technical knowledge, just a reserve proof of your coins.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Keep Your Coins Safe</p>
+                    <p class="MobileP">You never need to send your coins to earn a stake. You can keep your coins in your wallet and generate a reserve proof of your funds. This way, you retain full control of your coins while your reserve proof earns rewards for you.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Secure & Fair Rewards</p>
+                    <p class="MobileP">Our system uses special technology to ensure a fair and secure network by randomly selecting block producers, providing everyone with an equal chance to earn rewards while preventing cheating.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Join Now & Start Earning</p>
+                    <p class="MobileP">Our private staking system is easy to use and safe for beginner users. Join our community of XCASH holders today and start earning rewards with confidence!</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div fxLayout="column" class="MobileButtonContainer" fxFlex="60" style="padding-bottom:4vh" fxLayoutAlign="center center">
+        <div fxFlex="33.3" style="width:100%" fxLayoutAlign="center center">
+            <button class="MobileButton"> <a class="landingLink MobileLandingLink" href="https://delegates.xcash.foundation">Delegate Explorer</a></button>
+        </div>
+        <div fxFlex="33.3" style="width:100%; padding-top:1vh; padding-bottom: 1vh" fxLayoutAlign="center center">
+            <button class="MobileButton"> <a class="landingLink MobileLandingLink" href="https://calculator.xcash.foundation">ROI Calculator</a></button>
+        </div>
+        <div fxFlex="33.3" style="width:100%" fxLayoutAlign="center center">
+            <button class="MobileButton"> <a class="landingLink MobileLandingLink" href="https://docs.xcash.foundation/dpops/vote-and-staking">Docs</a></button>
+        </div>
+    </div>  
+    
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(0vw);" fxLayoutAlign="center center">
+        <ng-lottie id="lottie1" [options]="options" width="25vw" height="25vw" style="z-index: 0; transform:translateY(0vh);"></ng-lottie>
+    </div>
+
+</div>

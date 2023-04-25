@@ -1,0 +1,25 @@
+<div id="scrollMethodDiv" (scroll)=" onScroll($event); onWindowScroll()">
+   
+    <app-contribute-landing></app-contribute-landing> 
+    <div #bottomNav ngStyle.xs="bottom: .2%" id="bottomNav" fxLayout="column">
+        <div id="bottomNavButtonContainer" fxLayout="row" fxFlex="100">
+            <button aria-label="navigation button to Project Ethos Section" fxFlex.xs="33.3" id="ethosButton"  (click)="scrollToSection(ethos)"> <span ngClass.xs="mobileBottomNavButton">Ethos</span> </button>
+            <button aria-label="navigation button to Repository Section" fxFlex.xs="33.3"  id="reposButton" (click)="scrollToSection(repos)"><span ngClass.xs="mobileBottomNavButton">Repos</span> </button>
+            <button aria-label="navigation button to Go Further Section" fxFlex.xs="33.3"  id="gofurtherButton" (click)="scrollToSection(gofurther)"><span ngClass.xs="mobileBottomNavButton">Go Further</span> </button>
+        </div>
+    </div>
+
+    <!--app-builders></app-builders-->
+    <div #ethos>
+        <app-ethos></app-ethos>
+    </div>
+
+    <div #repos>
+        <app-repos></app-repos>
+    </div>
+
+    <div #gofurther>
+        <app-go-further></app-go-further> 
+    </div>
+
+</div>

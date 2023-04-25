@@ -1,0 +1,28 @@
+<!--div *ngIf="loader" fxLayoutAlign="center center" style="width:100%; height: 100vh; background: #1f1f1f; " fxLayout="column" fxLayoutAlign="center center">
+    <svg id="logoSpinner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.13759 63.29874">
+        <g fill="none" stroke="#fa741c" stroke-linecap="round" stroke-linejoin="round" stroke-width=".352968" paint-order="markers stroke fill">
+          <path d="M-30.11932 88.83404a1.911048 1.073049 0 0 1-1.970029 1.037252 1.911048 1.073049 0 0 1-1.850177-1.104647 1.911048 1.073049 0 0 1 1.964612-1.040487 1.911048 1.073049 0 0 1 1.855929 1.101601" style="font-variation-settings:'wdth' 121.8,'wght' 886" transform="matrix(13.13225 -13.17651 13.89002 12.37512 -780.2316 -1489.281)"/>
+          <path d="M-88.33912 26.84398a1.911048 1.073049 0 0 1-1.970029 1.037252 1.911048 1.073049 0 0 1-1.850177-1.104648 1.911048 1.073049 0 0 1 1.964612-1.040486 1.911048 1.073049 0 0 1 1.85593 1.101601" style="font-variation-settings:'wdth' 121.8,'wght' 886" transform="matrix(-13.13225 -13.17651 -13.89002 12.37512 -780.2316 -1489.281)"/>
+        </g>
+      </svg>
+      
+    <h1 style="color: white; font-size: 6vw; transform: translateY(2vh);">One Moment</h1>
+</div-->
+
+
+
+    <app-navbar></app-navbar>
+
+    <div *ngIf="navBool">
+        <ul fxLayout="row"  style="color:white" id="toolsList" fxLayoutGap="1.6vw">
+          <li role="button" aria-label="A link to the Blockchain explorer" ><a style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block;  " href="https://explorer.xcash.foundation/" target="_blank" >Block Explorer</a> </li>
+          <li role="button" aria-label="A link to the Delegate Explorer"><a style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block;  " href="http://delegates.xcash.foundation/" target="_blank" >Delegate Explorer</a> </li>
+          <li role="button" aria-label="A link to the project Github"><a style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block;  " href="https://github.com/X-CASH-official" target="_blank" >Github</a> </li>
+          <!--li role="button" aria-label="A link to the Media pack"><a href="https://xcash.foundation/mediakit" target="_blank" style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block;  " >Media Pack</a> </li-->
+          <li role="button"  aria-label="A link to the Daemon list"><a href="https://xcash.network/" target="_blank" rel="noopener noreferrer" style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block;  "> Daemon List</a></li>
+        </ul>
+    </div>
+
+
+ <router-outlet></router-outlet>
+

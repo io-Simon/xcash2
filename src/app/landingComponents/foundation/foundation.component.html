@@ -1,0 +1,97 @@
+
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">Foundation</h1>
+    </div>
+    
+    <p id="subHeadingP">A non-profit org that coordinates the development of XCASH.</p>
+
+    <div fxLayout="row" fxFlex="60" style="width:100%; height:50%;">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" style="width:100%; height: 70%;" fxLayoutAlign=" start center">
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding">  
+                    <p id="pHeading">Open-Source</p>
+                    <p class="mainContentP">XCASH is an open-source project, built upon the work of skilled and engaged contributors. Every project around the XCASH Ecosystem is open for contributions by the public GitHub.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Community Driven</p>
+                    <p class="mainContentP">Following a clear line of technical development, the vision is built with the community, by the community. Every project proposed by the community is assessed and evaluated by the foundation to provide funding.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Community Funded</p>
+                    <p class="mainContentP">The project startup costs were provided by the founding team, without an ICO. The current development of the cryptocurrency is now paid with the community fund, established to reward projects built for the XCASH ecosystem.</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height:120%; overflow: hidden;  transform: translateX(-3vw);" fxLayoutAlign="end end">
+            <ng-lottie [options]="options" width="48vw" height="48vw" style="z-index: 0; transform:translate( 4vw, 13vh);"></ng-lottie>
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="40" fxLayoutAlign="start start">
+        <button> <a class="landingLink" routerLink="contribute" >Contribute With Us</a></button> 
+    </div>
+
+</div>
+
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 0vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">Foundation</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">A non-profit org that coordinates the development of XCASH.</p>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Open-Source</p>
+                    <p class="MobileP">XCASH is an open-source project, built upon the work of skilled and engaged contributors. Every project around the XCASH Ecosystem is open for contributions by the public GitHub.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Community Driven</p>
+                    <p class="MobileP">Following a clear line of technical development, the vision is built with the community, by the community. Every project proposed by the community is assessed and evaluated by the foundation to provide funding.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Community Funded</p>
+                    <p class="MobileP">The project startup costs were provided by the founding team, without an ICO. The current development of the cryptocurrency is now paid with the community fund, established to reward projects built for the XCASH ecosystem.</p>
+                </div>
+            </div>
+        
+        </div>     
+
+    </div>
+
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="60" fxLayoutAlign="start start">
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" routerLink="contribute">Join Us</a></button>
+    </div>
+
+    <div fxLayout="column" fxFlex="20" style="width:100%; height:100%; overflow: hidden; transform: translateX(0vw);" fxLayoutAlign="center center">
+        <ng-lottie [options]="options" width="65vw" height="65vw" style="z-index: 0; transform:translate( -13vw, 0vh);"></ng-lottie>
+    </div>
+</div>

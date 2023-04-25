@@ -1,0 +1,135 @@
+.HighestSectionDiv{
+
+}
+
+#headlineContainer{
+    padding-bottom:4vh;
+}
+
+#SectionH1{
+    font-family: 'Archivo', sans-serif;
+    color:#fa741c;
+    font-size: 9vw;
+    font-weight:800 !important;
+    letter-spacing: 4px;
+    text-align: center;
+    width:45%;
+    background: none;
+    height:90%;
+}
+
+#subHeadingP{
+    width:60%;
+    text-align:center;
+}
+
+#totalContentContainer{
+    width: 70%;
+    height:100%;
+}
+
+#buttonContainer{
+    width: 70%; 
+    height: 35px; 
+    padding-top:2vh;
+}
+
+.paragraph {
+    width: 100%;
+    height:100%;
+    color: #fa741c;
+    padding-left: 2vw;
+}
+  
+.percentage {
+    margin-top: 0px;
+    font-family: Exo, sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    color: white;
+    padding-left: 2vw;
+}
+  
+.tabButtonContainer{
+    width:100% !important; 
+    height:100% !important;
+
+}
+
+.tabButtonContainer:hover{
+    background: #fa741c;
+    color:white
+}
+
+.tabButtonContainer:hover > .tabButton{
+    color:white
+}
+
+.tabButton:focus{
+    background: #fa741c;
+    color:white;
+}
+
+.tabButton{
+    width:100% !important; 
+    height:100% !important;
+    font-size: 1.4vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contentContainerPercent{
+    padding-bottom:4vh
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display:block;
+}
+
+#MobileSubHeadingP{
+    width:80%;
+    text-align:center;
+}
+.ClassMobileSubHeadingP{
+    padding:0
+}
+#MobileSubHeadingP{
+    line-height:1vh
+}
+
+#MobileSectionH1{
+    color: #fa741c;
+    background: none;
+}
+
+.MobileTabButton{
+    width:100% !important; 
+    height:100% !important;
+    font-size: 2.3vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button{
+    background: unset !important;
+}
+button:hover{
+    color: white !important
+}
+button:focus{
+    color: white !important;
+    background: #fa741c !important
+}
+
+.MobileParagraph {
+    width: 100%;
+    height:100%;
+    color: #fa741c;
+    padding-left: 2vw;
+    font-size:4vw
+}

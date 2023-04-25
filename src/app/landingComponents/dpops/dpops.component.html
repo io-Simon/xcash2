@@ -1,0 +1,112 @@
+
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">DPOPS</h1>
+    </div>
+    
+    <p id="subHeadingP">Experience Endless Possibilities With XCASH</p>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign=" start center">
+
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Stake</p>
+                    <p class="mainContentP">Maximize your XCASH earnings and secure the Blockchain with our delegate voting system. Use an auto-generated proof of funds to vote and earn rewards while holding your coins. Stake your coins today and join successful XCASH traders!</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Randomized Block Producer Selection</p>
+                    <p class="mainContentP">Our Randomized Block Producer Selection provides unbeatable network security for your XCASH. Our Verifiable Random Functions (VRF) ensure completely random selection of the next block-producing delegate, making it impossible to predict or attack. Join us now and stake your XCASH in the revolution!</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding">
+                    <p id="pHeading">Stake Delegation with Reserve Proofs</p>
+                    <p class="mainContentP">Earn rewards and take control of your XCASH with our Stake Delegation using Reserve Proofs. Use our cryptographic proof to select a node and participate in delegate voting without sending your coins to another wallet. Start staking your XCASH today and join the cryptocurrency movement!</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding">
+                    <p id="pHeading">DBFT: Delegated Byzantine Fault Tolerance</p>
+                    <p class="mainContentP">DBFT powers XCASH to run smoothly and securely with a faster, more reliable, and improved system. The block creator is selected by our VRF and our delegates vote quickly to ensure network efficiency. Stake your XCASH and join the unstoppable force revolutionizing the crypto world.</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(-4vw);" fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" data-default-duration="4.183333333333334" data-duration="0"  width="18vw" height="18vw" data-default-duration="4.183333333333334" data-duration="0"  style="z-index: 0; transform:translateY(-8vh);"></ng-lottie>
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="60"  fxLayoutAlign="start start">
+        <button> <a class="landingLink" href=" https://docs.xcash.foundation/dpops/yellowpaper-delagated-proof-of-private-stake">Technical Architecture Paper</a></button>
+    </div>
+   
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)"fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 4vh;" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">DPOPS</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">Experience Endless Possibilities<br> With XCASH</p>
+    </div>
+ 
+    <div fxLayout="row" fxFlex="80" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Stake</p>
+                    <p class="MobileP">Maximize your XCASH earnings and secure the Blockchain with our delegate voting system. Use an auto-generated proof of funds to vote and earn rewards while holding your coins. Stake your coins today and join successful XCASH traders!</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Randomized Block Producer Selection</p>
+                    <p class="MobileP">Our Randomized Block Producer Selection provides unbeatable network security for your XCASH. Our Verifiable Random Functions (VRF) ensure completely random selection of the next block-producing delegate, making it impossible to predict or attack. Join us now and stake your XCASH in the revolution!</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">Stake Delegation with Reserve Proofs</p>
+                    <p class="MobileP">Earn rewards and take control of your XCASH with our Stake Delegation using Reserve Proofs. Use our cryptographic proof to select a node and participate in delegate voting without sending your coins to another wallet. Start staking your XCASH today and join the cryptocurrency movement!</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="MobileContentContainerMainLanding">
+                    <p class="MobilePHeading">DBFT: Delegated Byzantine Fault Tolerance</p>
+                    <p class="MobileP">DBFT powers XCASH to run smoothly and securely with a faster, more reliable, and improved system. The block creator is selected by our VRF and our delegates vote quickly to ensure network efficiency. Stake your XCASH and join the unstoppable force revolutionizing the crypto world.</p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="5" style="padding-bottom:4vh" fxLayoutAlign="start start">
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" href="https://docs.xcash.foundation/dpops/yellowpaper-delagated-proof-of-private-stake">Technical Architecture Paper</a></button>
+    </div>
+
+    <div fxLayout="column" fxFlex="100" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(0vw); " fxLayoutAlign="center center">
+        <ng-lottie id="lottie1" [options]="options"  width="25vw" height="25vw" style="z-index: 0; transform:translateY(0vh);"></ng-lottie>
+    </div> 
+    
+
+</div>

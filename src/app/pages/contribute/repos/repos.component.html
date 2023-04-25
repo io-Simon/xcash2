@@ -1,0 +1,260 @@
+<div *ngIf="(screenWidth >= 600)" class="HighestSectionDiv" fxLayout="column" fxLayoutAlign="center center">
+
+  <div fxLayout="row" fxFlex="10" style="height:100%; width:70%; " fxLayoutAlign="center center">
+    <h1>Repos</h1>
+  </div>
+
+  <div fxLayout="column" fxFlex="20" style="height:100%; width:70%;"  fxLayoutAlign="center center">
+    <p>As an open-source project, X-Cash GitHub repositories are open for public contributions. See our contribution guidelines, check open issues and participate in the X-Cash development.</p>
+    <br>
+    <p> Some issues will be assigned a special tag for bounty. These issues can be undertaken by members of the community to earn XCASH rewards.</p>
+  </div>
+
+  <div fxLayout="row" fxFlex="20" class="repoContainerRow" style="padding-bottom:1vh;" fxLayoutAlign="center center" fxLayoutGap="1vh">
+    <div class="repoContainer" fxLayout="column" fxFlex="33">
+      <h4>delegates pool website</h4>
+
+      <div fxLayout="row">
+        <p fxFlex="5" class="repoDescriptionP">💻 </p>
+        <p fxFlex="95" class="repoDescriptionP">Delegates pool website - Delegates vote count, payment history etc...</p>
+      </div>
+
+      <div fxLayout="row" class="statsContainer" fxLayoutAlign="center end">
+        <p> <span>⭐</span>  {{delegatesPoolStars}}</p>
+        <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span>  {{delegatesPoolForks}}</p>
+      </div>
+      <button><a class="landingLink" target="_blank" href="https://github.com/X-CASH-official/delegates-pool-website">Enter Repo</a></button>
+
+
+    </div>
+    
+    <div class="repoContainer" fxLayout="column" fxFlex="33" >
+
+      <h4>android wallet</h4>
+
+      <div fxLayout="row">
+        <p fxFlex="5" class="repoDescriptionP">📱</p>
+        <p fxFlex="95" class="repoDescriptionP">X-Cash mobile wallet for Android phones</p>
+      </div>
+
+      <div fxLayout="row" class="statsContainer" fxLayoutAlign="center end">
+        <p>⭐ {{AndroidWalletStars}}</p>
+        <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span> {{AndroidWalletForks}}</p>
+      </div>
+
+      <button><a class="landingLink" target="_blank" href="https://github.com/X-CASH-official/android-wallet">Enter Repo</a></button>
+
+    </div>
+  
+    <div class="repoContainer" fxLayout="column" fxFlex="33" >
+
+      <h4>delegates supervisor</h4>
+
+      <div fxLayout="row">
+        <p fxFlex="5" class="repoDescriptionP">👩‍💻</p>
+        <p fxFlex="95" class="repoDescriptionP">Delegates status - Check delegates statistics and status</p>
+      </div>
+
+      <div fxLayout="row" class="statsContainer" fxLayoutAlign="center end">
+        <p>⭐ {{DelegateSupervisorStars}}</p>
+        <p><span style="font-size: 1.3vw; color: #fa741c">⑂</span>  {{DelegateSupervisorForks}}</p>
+      </div>
+
+      <button class=""><a class="landingLink" target="_blank" href="https://github.com/X-CASH-official/delegates-supervisor">Enter Repo</a></button>
+
+    </div>
+  
+  </div>
+
+  <div fxLayout="row" fxFlex="20" class="repoContainerRow" fxLayoutAlign="center center" fxLayoutGap="1vh">
+  
+    <div class="repoContainer" fxLayout="column" fxFlex="33">
+
+        <h4>core</h4>
+
+        <div fxLayout="row">
+          <p fxFlex="5" class="repoDescriptionP">📦</p>
+          <p fxFlex='90' class="repoDescriptionP">First Cryptonote coin with public &amp; private transactions, custom DPOS consensus</p>
+        </div>
+
+        <div fxLayout="row" class="statsContainer" fxLayoutAlign="center end">
+          <p>⭐ {{coreStars}}</p>
+          <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span>  {{coreForks}}</p>
+        </div>
+      
+        <button class=""><a class="landingLink" target="_blank" href="https://github.com/X-CASH-official/xcash-core">Enter Repo</a></button>
+
+    </div>
+    
+    <div class="repoContainer" fxLayout="column" fxFlex="33">
+
+        <h4>dpops</h4>
+
+        <div fxLayout="row">
+          <p fxFlex="5" class="repoDescriptionP">🗳</p>
+          <p fxFlex="95" class="repoDescriptionP">Delegated-Proof-of-Private-Stake: First DPoS implementation on a Monero-based coin</p>
+        </div>
+
+        <div fxLayout="row" class="statsContainer" fxLayoutAlign="center end">
+          <p>⭐ {{dpopsStars}}</p>
+          <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span> {{dpopsForks}}</p>
+        </div>
+
+        <button class=""><a class="landingLink" target="_blank" href="https://github.com/X-CASH-official/xcash-dpops">Enter Repo</a></button>
+
+    </div>
+  
+    <div class="repoContainer" fxLayout="column" fxFlex="33">
+
+        <h4>delegates-explorer</h4>
+
+        <div fxLayout="row">
+          <p fxFlex="5" class="repoDescriptionP">🔍</p>
+          <p fxFlex="95" class="repoDescriptionP">Delegates Explorer - Delegates, votes, reserve proofs information <br><br></p>
+        </div>
+
+        <div fxLayout="row" class="statsContainer" fxLayoutAlign="center end">
+          <p>⭐ {{delegatesExplorerStars}}</p>
+          <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span>  {{delegatesExplorerForks}}</p>
+        </div>
+
+        <button class=""><a class="landingLink" target="_blank" href="https://github.com/X-CASH-official/delegates-explorer">Enter Repo</a></button>
+
+    </div>
+</div>
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)"  class="MobileHighestSectionDiv" fxLayout="column" fxLayoutAlign="center center">
+
+  <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+    <h1 class="ClassMobileSectionH1" id="MobileSectionH1">Repos</h1>  
+    <p class="ClassMobileSubHeadingP" id="subHeadingP">As an open-source project, XCASH GitHub repositories are open for public contributions. See our contribution guidelines, check open issues and participate in the X-Cash development. </p>
+
+</div>
+
+  <div fxLayout="column" style="width:90%; " fxLayoutAlign="center center" fxLayoutGap="1vh">
+
+    <div fxLayout="column" fxFlex="50" style="width:50%; height:100%; " fxLayoutGap="1vh" >
+      
+      <div class="repoContainer" fxLayout="column" fxLayoutAlign="center center" fxFlex="">
+        <h4 class="MobileH4">delegates pool website</h4>
+  
+        <div fxLayout="row">
+          <p fxFlex="5" class="MobileRepoDescriptionP">💻 </p>
+          <p fxFlex="95" class="MobileRepoDescriptionP">Delegates pool website - Delegates vote count, payment history etc...</p>
+        </div>
+  
+        <div fxLayout="row" class="MobileStatsContainer" fxLayoutAlign="center end">
+          <p> <span>⭐</span>  {{delegatesPoolStars}}</p>
+          <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span>  {{delegatesPoolForks}}</p>
+        </div>
+  
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="https://github.com/X-CASH-official/delegates-pool-website">Enter Repo</a></button>
+    
+  
+      </div>
+      
+      <div class="repoContainer" fxLayout="column" fxLayoutAlign="center center" fxFlex="">
+  
+        <h4 class="MobileH4">android wallet</h4>
+  
+        <div fxLayout="row">
+          <p fxFlex="5" class="MobileRepoDescriptionP">📱</p>
+          <p fxFlex="95" class="MobileRepoDescriptionP">X-Cash mobile wallet for Android phones</p>
+        </div>
+  
+        <div fxLayout="row" class="MobileStatsContainer" fxLayoutAlign="center end">
+          <p>⭐ {{AndroidWalletStars}}</p>
+          <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span> {{AndroidWalletForks}}</p>
+        </div>
+  
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="https://github.com/X-CASH-official/android-wallet">Enter Repo</a></button>
+    
+
+      </div>
+    
+      <div class="repoContainer" fxLayout="column" fxLayoutAlign="center center" fxFlex="">
+  
+        <h4 class="MobileH4">delegates supervisor</h4>
+  
+        <div fxLayout="row">
+          <p fxFlex="5" class="MobileRepoDescriptionP">👩‍💻</p>
+          <p fxFlex="95" class="MobileRepoDescriptionP">Delegates status supervisor - Check delegates statistics and status</p>
+        </div>
+  
+        <div fxLayout="row" class="MobileStatsContainer" fxLayoutAlign="center end">
+          <p>⭐ {{DelegateSupervisorStars}}</p>
+          <p><span style="font-size: 1.3vw; color: #fa741c">⑂</span>  {{DelegateSupervisorForks}}</p>
+        </div>
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="https://github.com/X-CASH-official/delegates-supervisor">Enter Repo</a></button>
+    
+      </div>
+    </div>
+
+    <div fxFlex="50" fxLayout="column" style="width:50%; " fxLayoutGap="1vh">
+      
+      <div class="repoContainer" fxLayout="column" fxLayoutAlign="center center" fxFlex="">
+        <h4 class="MobileH4">core</h4>
+
+        <div fxLayout="row">
+          <p fxFlex="5" class="MobileRepoDescriptionP">📦</p>
+          <p fxFlex='90' class="MobileRepoDescriptionP">First Cryptonote coin with public &amp; private transactions, custom DPOS consensus</p>
+        </div>
+
+        <div fxLayout="row" class="MobileStatsContainer" fxLayoutAlign="center end">
+          <p>⭐ {{coreStars}}</p>
+          <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span>  {{coreForks}}</p>
+        </div>
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="https://github.com/X-CASH-official/xcash-core">Enter Repo</a></button>
+    
+      </div>
+    
+      <div class="repoContainer" fxLayout="column" fxLayoutAlign="center center" fxFlex="">
+
+          <h4 class="MobileH4">dpops</h4>
+
+          <div fxLayout="row">
+            <p fxFlex="5" class="MobileRepoDescriptionP">🗳</p>
+            <p fxFlex="95" class="MobileRepoDescriptionP">Delegated-Proof-of-Private-Stake: First DPoS implementation on a Monero-based coin</p>
+          </div>
+
+          <div fxLayout="row" class="MobileStatsContainer" fxLayoutAlign="center end">
+            <p>⭐ {{dpopsStars}}</p>
+            <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span> {{dpopsForks}}</p>
+          </div>
+          <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="https://github.com/X-CASH-official/xcash-dpops">Enter Repo</a></button>
+    
+      </div>
+  
+      <div class="repoContainer" fxLayout="column" fxLayoutAlign="center center" fxFlex="">
+
+          <h4 class="MobileH4">delegates-explorer</h4>
+
+          <div fxLayout="row">
+            <p fxFlex="5" class="MobileRepoDescriptionP">🔍</p>
+            <p fxFlex="95" class="MobileRepoDescriptionP">Delegates Explorer - Delegates, votes, reserve proofs information</p>
+          </div>
+
+          <div fxLayout="row" class="MobileStatsContainer" fxLayoutAlign="center end">
+            <p>⭐ {{delegatesExplorerStars}}</p>
+            <p><span style="font-size: 1.3vw; color: #fa741c">⑂ </span>  {{delegatesExplorerForks}}</p>
+          </div>
+          <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="https://github.com/X-CASH-official/delegates-explorer">Enter Repo</a></button>
+    
+      </div>
+    
+
+
+
+
+</div>
+</div>
+
+  <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+
+    <p class="ClassMobileSubHeadingP" id="subHeadingP">Some issues will be assigned a special tag for bounty. These issues can be undertaken by members of the community to earn XCASH rewards.</p>
+    
+  </div>
+</div>

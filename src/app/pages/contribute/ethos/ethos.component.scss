@@ -1,0 +1,54 @@
+.HighestSectionDiv{
+    overflow: hidden
+}
+
+p{
+    width:70%;
+}
+
+li{
+    color:white;
+    font-size:1.3vw;
+    padding-bottom:1vh;
+    list-style-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1OCA1OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iI2ZmNmQwMCIgZD0iTTAgMGg1OHY1OEgweiIvPjwvc3ZnPgo=");
+}
+ul{
+    padding-left: 2vw;
+}
+
+h1{
+    font-size: 9vw;
+    width: 100%;
+    text-align: center;
+    padding-bottom:8vh;
+    color:#fa741c;
+    font-family: 'Archivo', sans-serif;
+}
+
+h3{
+    color:white;
+    padding-top: 4vh;
+    font-size:1.6vw;
+    padding-bottom: 3vh
+}
+
+.h3Mobile{
+    color:white;
+    padding-top: 4vh;
+    font-size:3.3vw;
+    padding-bottom: 3vh
+}
+
+.liMobile{
+    font-size:2.9vw;
+}
+
+#SectionH1{
+    background: none;
+    color:#fa741c;
+
+}
+
+.ClassMobileSectionH1{
+    padding: 0;
+}

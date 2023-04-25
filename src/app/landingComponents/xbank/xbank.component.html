@@ -1,0 +1,110 @@
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">Swap X</h1>
+    </div>
+    
+    <p id="subHeadingP">XCASH Cold Storage & Cross-Chain Swaps.</p>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign=" start center">
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding">  
+                    <p id="pHeading">Bridging The Gap</p>
+                    <p class="mainContentP">The bridge from the XCASH Mainnet to the Polygon Network is Swap Shop: the free and secure XCASH storage solution. Swap your Mainnet XCASH to Polygon XCASH, instantly.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding">  
+                    <p id="pHeading">Secure</p>
+                    <p class="mainContentP">With a combination of multi-signatures wallets, automatic cold wallet storage, and a private dedicated network, the security of your funds is our priority.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding">  
+                    <p id="pHeading">Store & Use</p>
+                    <p class="mainContentP">You can safely store your XCASH in Swap Shop's secured storage solution. Transfers within the Swap Shop are free, and we only charge standard blockchain fees for withdrawal.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Swap to WXCASH</p>
+                    <p class="mainContentP">Create an account at Swap Shop to safely store your XCASH, and proceed with the integrated free swap feature to change your XCASH to WXCASH.</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(-4vw);" fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" width="18vw" height="18vw" style="z-index: 0; transform:translateY(-15vh);"></ng-lottie>
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="60" fxLayoutAlign="center start">
+        <button><a class="landingLink" href="https://xbank.xcash.foundation/">Create an account</a> </button>
+    </div>
+     
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">Swap X</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">XCASH Cold Storage &<br> Cross-Chain Swaps.</p>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div fxLayout="column" id="mainContentContainer"  fxLayoutAlign="center center">
+                <div class="MobileContentContainerMainLanding">  
+                    <p class="MobilePHeading">Bridging The Gap</p>
+                    <p class="MobileP">The bridge from the XCASH Mainnet to the Polygon Network is Swap Shop: the free and secure XCASH storage solution. Swap your Mainnet XCASH to Polygon XCASH, instantly.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="MobileContentContainerMainLanding">  
+                    <p class="MobilePHeading">Secure</p>
+                    <p class="MobileP">With a combination of multi-signatures wallets, automatic cold wallet storage, and a private dedicated network, the security of your funds is our priority.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="MobileContentContainerMainLanding">  
+                    <p class="MobilePHeading">Store & Use</p>
+                    <p class="MobileP">You can safely store your XCASH in Swap Shop's secured storage solution. Transfers within the Swap Shop are free, and we only charge standard blockchain fees for withdrawal.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Swap to WXCASH</p>
+                    <p class="MobileP">Create an account at Swap Shop to safely store your XCASH, and proceed with the integrated free swap feature to change your XCASH to WXCASH.</p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="60" style="padding-bottom:4vh" fxLayoutAlign="center center">
+        <button class="MobileButton" style="width:100%"><a class="landingLink MobileLandingLink" href="https://xbank.xcash.foundation/">Create an account</a> </button>
+    </div>
+     
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden; transform: translateX(0vw);" fxLayoutAlign="center center">
+        <ng-lottie id="lottie1" [options]="options" width="25vw" height="25vw" style="z-index: 0; transform:translateY(0vh);"></ng-lottie>
+    </div>
+
+</div>

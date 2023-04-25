@@ -1,0 +1,46 @@
+#SectionH1{
+    font-family: 'Archivo', sans-serif;
+    color:#fa741c;
+    font-size: 9vw;
+    font-weight:800 !important;
+    letter-spacing: 4px;
+    text-align: center;
+    width:100%;
+    background: none;
+}
+
+#headlineContainer{
+    width:100%; 
+    height:15%;
+}
+ 
+#pHeading{
+    color: #fa741c;
+    padding-bottom:.8vh;
+}
+  
+#subHeadingP{
+    width:60%;
+    padding-bottom:1vh;
+    text-align: center
+}
+
+#buttonContainer{
+    padding-top:3vh;
+}
+
+#mainContentContainer{
+    width:100%
+}
+
+//Mobile
+
+.MobileHighestSectionDiv{
+    height:100%;
+    padding-top:4vh;
+
+}
+.MobilePHeading{
+    color:white !important;
+    font-size:4vw
+}
