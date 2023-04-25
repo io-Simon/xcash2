@@ -18,24 +18,9 @@ const routes: Routes = [
       .then(mod => mod.ProjectModule)
   },
   {
-    path: 'news',
-    loadChildren: () => import('./pages/news/news.module')
-      .then(mod => mod.NewsModule)
-  },
-  {
-    path: 'get-started',
-    loadChildren: () => import('./pages/getstarted/getstarted.module')
-      .then(mod => mod.GetstartedModule)
-  },
-  {
     path: 'wallet',
     loadChildren: () => import('./pages/wallet/wallet.module')
       .then(mod => mod.WalletModule)
-  },
-  {
-    path: 'ressources',
-    loadChildren: () => import('./pages/ressources/ressources.module')
-      .then(mod => mod.RessourcesModule)
   },
   {
     path: 'contribute',

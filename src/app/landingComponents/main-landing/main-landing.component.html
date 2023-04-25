@@ -2,39 +2,39 @@
     <app-landing #landing (SendBoolToParent)="toScrollToOverviewSection($event)"></app-landing>
     <div ngStyle.xs="bottom: .2%"  #bottomNav id="bottomNav" fxLayout="column">
         <div *ngIf="(screenWidth >= 600)" id="bottomNavButtonContainer" fxLayout="row">
-            <button id="overviewButton" fxFlex.xs="10" (click)="scrollToSection(overview)">Overview</button>
-            <button id="flexxButton" fxFlex.xs="7" (click)="scrollToSection(flexx)">Flex X</button>
-            <button id="dpopsButton" fxFlex.xs="4" (click)="scrollToSection(dpops)">DPOPS</button>
-            <button id="pubxButton" fxFlex.xs="10" (click)="scrollToSection(pubx)">Public Txs</button>
-            <button id="ecoxButton" fxFlex.xs="5" (click)="scrollToSection(ecox)">ECO X</button>
-            <button id="stakeButton" fxFlex.xs="5" (click)="scrollToSection(stake)">Stake</button>
-            <button id="xpaymentButton" fxFlex.xs="10" (click)="scrollToSection(xpayment)">XPay</button>
-            <button id="xswapButton" fxFlex.xs="5" (click)="scrollToSection(xswap)">X Swap</button>
-            <button id="wxcashButton" fxFlex.xs="5" (click)="scrollToSection(wxcash)">WXCASH</button>
-            <button id="xpyButton" fxFlex.xs="5" (click)="scrollToSection(xpy)">X Py</button>
-            <button id="sidechainsButton" fxFlex.xs="10" (click)="scrollToSection(sidechains)">Sidechains</button>
-            <button id="foundationButton" fxFlex.xs="10" (click)="scrollToSection(foundation)">Foundation</button>
-            <button id="metricsButton" fxFlex.xs="7" (click)="scrollToSection(metrics)">Metrics</button>
-            <button id="gofurtherButton" fxFlex.xs="7" (click)="scrollToSection(gofurther)">Further</button>
+            <button id="overviewButton" fxFlex.xs="10" aria-label="link to the overview section" (click)="scrollToSection(overview)">Overview</button>
+            <button id="flexxButton" fxFlex.xs="7" aria-label="link to the Flex X section" (click)="scrollToSection(flexx)">Flex X</button>
+            <button id="dpopsButton" fxFlex.xs="4" aria-label="link to the DPOPS section" (click)="scrollToSection(dpops)">DPOPS</button>
+            <button id="pubxButton" fxFlex.xs="10" aria-label="link to the Public X section"  (click)="scrollToSection(pubx)">Public Txs</button>
+            <button id="ecoxButton" fxFlex.xs="5" aria-label="link to the eco x section" (click)="scrollToSection(ecox)">ECO X</button>
+            <button id="stakeButton" fxFlex.xs="5" aria-label="link to the stake section" (click)="scrollToSection(stake)">Stake</button>
+            <button id="xpaymentButton" fxFlex.xs="10" aria-label="link to the xpayment section" (click)="scrollToSection(xpayment)">XPay</button>
+            <button id="xswapButton" fxFlex.xs="5" aria-label="link to the x swap section" (click)="scrollToSection(xswap)">X Swap</button>
+            <button id="wxcashButton" fxFlex.xs="5" aria-label="link to the wxcash section" (click)="scrollToSection(wxcash)">WXCASH</button>
+            <button id="xpyButton" fxFlex.xs="5" aria-label="link to the x python section" (click)="scrollToSection(xpy)">X Py</button>
+            <button id="sidechainsButton" fxFlex.xs="10" aria-label="link to the sidechains section" (click)="scrollToSection(sidechains)">Sidechains</button>
+            <button id="foundationButton" fxFlex.xs="10" aria-label="link to the foundation section" (click)="scrollToSection(foundation)">Foundation</button>
+            <button id="metricsButton" fxFlex.xs="7" aria-label="link to the metrics section" (click)="scrollToSection(metrics)">Metrics</button>
+            <button id="gofurtherButton" fxFlex.xs="7" aria-label="link to the go further section" (click)="scrollToSection(gofurther)">Further</button>
         </div>
         <!--Mobile-->
         <div *ngIf="(screenWidth < 600)" id="bottomNavButtonContainer" fxLayout="row">
             <!--Click to make the button text big, then select that button text to navigate-->
             <button></button>
-            <button id="overviewButton" fxFlex.xs="6" (click)="scrollToSection(overview)"><span id="MobileOverviewButtonSpan" class="mobileBottomNavButton">OV</span> </button>
-            <button id="flexxButton" fxFlex.xs="7" (click)="scrollToSection(flexx)"><span id="MobileFlexxButtonSpan" class="mobileBottomNavButton">Flex</span></button>
-            <button id="dpopsButton" fxFlex.xs="10" (click)="scrollToSection(dpops)"><span id="MobileDpopsButtonSpan" class="mobileBottomNavButton">DPOPS</span></button>
-            <button id="pubxButton" fxFlex.xs="8" (click)="scrollToSection(pubx)"><span id="MobilePubxButtonSpan" class="mobileBottomNavButton">Pub</span></button>
-            <button id="ecoxButton" fxFlex.xs="7" (click)="scrollToSection(ecox)"><span id="MobileEcoxButtonSpan" class="mobileBottomNavButton">ECO</span></button>
-            <button id="stakeButton" fxFlex.xs="6" (click)="scrollToSection(stake)"><span id="MobileStakeButtonSpan"class="mobileBottomNavButton">Sta</span></button>
-            <button id="xpaymentButton" fxFlex.xs="10" (click)="scrollToSection(xpayment)"><span id="MobileXpaymentButtonSpan" class="mobileBottomNavButton">XPay</span></button>
-            <button id="xswapButton" fxFlex.xs="6" (click)="scrollToSection(xswap)"><span id="MobileXswapButtonSpan" class="mobileBottomNavButton">Swap</span></button>
-            <button id="wxcashButton" fxFlex.xs="7" (click)="scrollToSection(wxcash)"><span id="MobileWxcashButtonSpan" class="mobileBottomNavButton">WXCA</span></button>
-            <button id="xpyButton" fxFlex.xs="7" (click)="scrollToSection(xpy)"><span id="MobileXpyButtonSpan" class="mobileBottomNavButton">XPy</span></button>
-            <button id="sidechainsButton" fxFlex.xs="5" (click)="scrollToSection(sidechains)"><span id="MobileSidechainsButtonSpan" class="mobileBottomNavButton">SC</span></button>
-            <button id="foundationButton" fxFlex.xs="8" (click)="scrollToSection(foundation)"><span id="MobileFoundationButtonSpan" class="mobileBottomNavButton">Fou</span></button>
-            <button id="metricsButton" fxFlex.xs="9" (click)="scrollToSection(metrics)"><span id="MobileMetricsButtonSpan" class="mobileBottomNavButton">Metrc</span></button>
-            <button id="gofurtherButton" fxFlex.xs="7" (click)="scrollToSection(gofurther)"><span id="MobileGofurtherButtonSpan"class="mobileBottomNavButton">Fur</span></button>
+            <button id="overviewButton" fxFlex.xs="6"  aria-label="link to the overview section" (click)="scrollToSection(overview)"><span id="MobileOverviewButtonSpan" class="mobileBottomNavButton">OV</span> </button>
+            <button id="flexxButton" fxFlex.xs="7" aria-label="link to the Flex X section" (click)="scrollToSection(flexx)"><span id="MobileFlexxButtonSpan" class="mobileBottomNavButton">Flex</span></button>
+            <button id="dpopsButton" fxFlex.xs="10" aria-label="link to the DPOPS section"  (click)="scrollToSection(dpops)"><span id="MobileDpopsButtonSpan" class="mobileBottomNavButton">DPOPS</span></button>
+            <button id="pubxButton" fxFlex.xs="8" aria-label="link to the public x section"  (click)="scrollToSection(pubx)"><span id="MobilePubxButtonSpan" class="mobileBottomNavButton">Pub</span></button>
+            <button id="ecoxButton" fxFlex.xs="7" aria-label="link to the eco x section"  (click)="scrollToSection(ecox)"><span id="MobileEcoxButtonSpan" class="mobileBottomNavButton">ECO</span></button>
+            <button id="stakeButton" fxFlex.xs="6" aria-label="link to the stake section"  (click)="scrollToSection(stake)"><span id="MobileStakeButtonSpan"class="mobileBottomNavButton">Sta</span></button>
+            <button id="xpaymentButton" fxFlex.xs="10" aria-label="link to the xpayment section"  (click)="scrollToSection(xpayment)"><span id="MobileXpaymentButtonSpan" class="mobileBottomNavButton">XPay</span></button>
+            <button id="xswapButton" fxFlex.xs="6" aria-label="link to the xswap section"  (click)="scrollToSection(xswap)"><span id="MobileXswapButtonSpan" class="mobileBottomNavButton">Swap</span></button>
+            <button id="wxcashButton" fxFlex.xs="7" aria-label="link to the wxcash section"  (click)="scrollToSection(wxcash)"><span id="MobileWxcashButtonSpan" class="mobileBottomNavButton">WXCA</span></button>
+            <button id="xpyButton" fxFlex.xs="7" aria-label="link to the xpy section"  (click)="scrollToSection(xpy)"><span id="MobileXpyButtonSpan" class="mobileBottomNavButton">XPy</span></button>
+            <button id="sidechainsButton" fxFlex.xs="5" aria-label="link to the sidechains section"  (click)="scrollToSection(sidechains)"><span id="MobileSidechainsButtonSpan" class="mobileBottomNavButton">SC</span></button>
+            <button id="foundationButton" fxFlex.xs="8" aria-label="link to the foundation section"  (click)="scrollToSection(foundation)"><span id="MobileFoundationButtonSpan" class="mobileBottomNavButton">Fou</span></button>
+            <button id="metricsButton" fxFlex.xs="9" aria-label="link to the metrics section"  (click)="scrollToSection(metrics)"><span id="MobileMetricsButtonSpan" class="mobileBottomNavButton">Metrc</span></button>
+            <button id="gofurtherButton" fxFlex.xs="7" aria-label="link to the go further section"  (click)="scrollToSection(gofurther)"><span id="MobileGofurtherButtonSpan"class="mobileBottomNavButton">Fur</span></button>
             <button></button>
         </div>
     </div>
