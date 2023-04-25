@@ -1,0 +1,132 @@
+
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">Sidechains</h1>
+    </div>
+    
+    <p id="subHeadingP">Personal Blockchains on Demand.</p>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="row" fxFlex="60" style="width:100%; height: 100%; transform: translateX(0vw)" fxLayoutAlign=" center center">
+
+            <div fxLayout="column" fxFlex="50" id="mainContent" style="width:100%; height: 100%; transform: translateX(5vw)" fxLayoutAlign=" center center">
+
+                <div fxLayout="column" fxLayoutAlign="center start" > 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">No hardware</p>
+                        <p class="mainContentP">A sidechain is a full blockchain that is hosted by our delegates. This means that contrary to traditional blockchains, you do not need to rent your own infrastructure.</p>
+                    </div>
+                </div>
+
+                <div fxLayout="column" fxLayoutAlign="center start" class="topDivContentContainerLanding"> 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">No code</p>
+                        <p class="mainContentP">Setting up a sidechain is easy. Our X-Blockchain modules offer pre-customized options to fit your requirements.</p>
+                    </div>
+                </div>
+
+                <div fxLayout="column" fxLayoutAlign="center start" class="topDivContentContainerLanding"> 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">Secure</p>
+                        <p class="mainContentP">All nodes operate side chains with implicit consent from all other nodes as part of XCASH's inherited security model.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div fxLayout="column" fxFlex="50" id="mainContent" style="width:100%; height: 100%; transform: translateX(.2vw)" fxLayoutAlign=" center center">
+
+                <div fxLayout="column" fxLayoutAlign="center start"  style=" width:100%; "> 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">Improvement</p>
+                        <p class="mainContentP">Delegate nodes compete to secure the best resources to process and store transactions quickly. This helps ensure fast and secure decentralized transactions.</p>
+                    </div>
+                </div>
+
+                <div fxLayout="column" fxLayoutAlign="center start" class="topDivContentContainerLanding"> 
+                    <div class="contentContainerMainLanding"> 
+                        <p id="pHeading">Custom</p>
+                        <p class="mainContentP">Our sidechains are flexible and cost-effective. You can choose how many delegates and sidechains you need.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(-4vw);" fxLayoutAlign="end end">
+            <ng-lottie id="lottie1" [options]="options" width="18vw" height="18vw" style="z-index: 0; transform:translateY(-3vh);"></ng-lottie>
+        
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="60"  fxLayoutAlign="start start">
+        <button href="https://docs.xcash.foundation/dpops/yellowpaper-delagated-proof-of-private-stake#implications-of-dpops-on-x-cash-and-the-cryptocurrencies">Sidechains Technical</button>
+    </div>
+
+</div>
+
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">Sidechains</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">Personal Blockchains<br> on Demand</p>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">No Hardware</p>
+                    <p class="MobileP">A sidechain is a full blockchain that is hosted by our delegates. This means that contrary to traditional blockchains, you do not need to rent your own infrastructure.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">No Code</p>
+                    <p class="MobileP">Setting up a sidechain is easy. Our X-Blockchain modules offer pre-customized options to fit your requirements.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Secure</p>
+                    <p class="MobileP">All nodes operate side chains with implicit consent from all other nodes as part of XCASH's inherited security model</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Improvement</p>
+                    <p class="MobileP">Delegate nodes compete to secure the best resources to process and store transactions quickly. This helps ensure fast and secure decentralized transactions.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Custom</p>
+                    <p class="MobileP">Our sidechains are flexible and cost-effective. You can choose how many delegates and sidechains you need.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="60" style="padding-bottom:4vh" fxLayoutAlign="start start">
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" href="https://docs.xcash.foundation/dpops/yellowpaper-delagated-proof-of-private-stake#implications-of-dpops-on-x-cash-and-the-cryptocurrencies">Sidechains Technical</a></button>
+    </div>
+
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(0vw);" fxLayoutAlign="center center">
+        <ng-lottie [options]="options" id="lottie1" width="25vw" height="25vw" style="z-index: 0; transform:translateY(0vh);"></ng-lottie>
+    </div>
+
+</div>

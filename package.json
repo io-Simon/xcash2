@@ -1,5 +1,5 @@
 {
-  "name": "corporate",
+  "name": "XCASH",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,13 +11,20 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.2.0",
+    "@angular/cdk": "^14.2.0",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
     "@angular/core": "^14.2.0",
+    "@angular/flex-layout": "^14.0.0-beta.41",
     "@angular/forms": "^14.2.0",
+    "@angular/material": "^14.2.0",
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "lottie-web": "^5.11.0",
+    "ngx-clipboard": "^15.1.0",
+    "ngx-lottie": "^9.1.0",
+    "ngx-page-scroll": "^9.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

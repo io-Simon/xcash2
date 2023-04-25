@@ -1,0 +1,77 @@
+#lottieR{
+    stroke: #1189a5;
+    stroke-width: 2px;
+}
+
+li{
+    color:white;
+    font-size:1.3em;
+    padding-bottom:1vh;
+    list-style-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1OCA1OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iI2ZmNmQwMCIgZD0iTTAgMGg1OHY1OEgweiIvPjwvc3ZnPgo=");
+}
+
+h3{
+    color:white
+}
+
+h1{
+    font-size: 9vw;
+    width: 100%;
+    transform: translateX(0vw);
+    text-align: center;
+    color:#fa741c;
+}
+
+//Mobile
+
+.MobileHighestSectionDiv{
+    height:100vh
+}
+
+.Mobileh1{
+    font-size: 16vw;
+    background: #1f1f1f;
+    width: 100%;
+    height:100%;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    text-align: center;
+    transform: translateX(0vw);
+    z-index:2
+}
+
+#MobileHeadingContainer{
+    height:100%;
+    width:100%;
+    text-align: center;
+}
+
+#MobileAnimatedlogo{
+    width: 24%;
+    height: 24%;
+    left: 44%;
+    bottom: 39%;
+    animation: MobilelogoToTop 1s linear 1 forwards;
+    position: absolute;
+    transform: scale(30);
+}
+
+@keyframes MobilelogoToTop {
+    10%{
+        transform:scale(35);
+    }
+    20%{
+        transform:scale(10);
+    }
+    to {
+        transform: translateX(-7.2vw) scale(1);
+    }
+}
+.MobileAnimatedSvgContainer{
+    width:100%;
+    height:100%;
+    padding-top:100%;
+    padding-bottom:100%;
+    position:absolute;
+    overflow: hidden;
+}

@@ -1,0 +1,38 @@
+app-navbar{
+    display: border-box ; 
+    position:fixed;
+    width: 100%;
+    z-index: 10;
+    height:65px;
+    opacity:1;
+    overflow-x: hidden !important;
+    z-index:100;
+}
+
+
+#toolsList{
+    position:fixed;
+    top: 5.6%;
+    right: -4%;
+    width:50%;
+    font-size:1.1vw;
+    list-style-type: none;
+    cursor: pointer;
+    z-index:110;
+}
+
+li{
+    color: #fa741c;
+    background-color: #1f1f1f;
+}
+
+#logoSpinner{
+    width:10%;
+    height:10%;
+    animation: logoSpin infinite 1s
+}
+@keyframes logoSpin {
+    100%{
+        transform: rotate(360deg)
+    }
+}

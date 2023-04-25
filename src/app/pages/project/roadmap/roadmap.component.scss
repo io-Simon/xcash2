@@ -1,0 +1,137 @@
+.HighestSectionDiv{
+  padding-bottom:2vh;
+  height:110vh;
+}
+
+#SectionH1{
+    font-family: 'Archivo', sans-serif;
+    color:#fa741c;
+    font-size: 9vw;
+    font-weight:800 !important;
+    letter-spacing: 4px;
+    text-align: center;
+    width:45%;
+    background: none;
+}
+ 
+#sidePanel1{
+  width: 100%; 
+  height:100%;
+  border-top: 8px #fa741c solid;
+  color: #fa741c 
+}
+
+#sidePanel2{
+  width: 100%; 
+  height:100%;
+  border-top: 8px white solid;
+  color: white;
+}
+
+#sidePanel3{
+  width: 100%; 
+  height:100%;
+  border-top: 8px #1189A5 solid;
+  color: #1189A5
+}
+
+.contentContainerMainLandingBlock2{
+  border: white 1px solid;
+}
+
+.contentContainerMainLandingBlock3{
+  border: #1189A5 1px solid;
+}
+
+#pHeading{
+    color: #fa741c;
+    padding-bottom:.8vh;
+}
+  
+#subHeadingP{
+    width:60%;
+    text-align:center
+}
+
+.sectionHeadlineText{
+  padding-top: 1.5vh;
+  padding-left: 1vh;
+  font-size: 1.5vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#buttonContainer{
+    padding-top:0vh;
+}
+
+button{
+  color: #fa741c;
+  background: none;
+  border: none;
+  box-shadow: unset; 
+}
+
+svg{
+  padding-top:1vh;
+  width:100%;
+  height:100%;
+  cursor: pointer;
+ }
+
+#mainContentContainer{
+  width:100%;
+  height:100%;
+ }
+
+.contentContainerMainLanding{
+  width: 100%;
+  height:100%    
+}
+
+#block1{
+  height:100%;
+  width:100%
+}
+
+#block2{
+  width:100%;
+  height:100%;
+  padding-top:2vh;
+  padding-bottom:1vh
+}
+
+#block3{
+  height:100%;
+  width:100%
+}
+
+.mainContentP{
+  display: none;
+  width: 93%;
+}
+
+#headlineContainer{
+  padding-bottom:3vh;
+}
+
+
+.MobileSectionHeadlineText{
+  padding-top: 1.5vh;
+  padding-right: 1vh;
+  font-size: 2.5vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#MobilePHeading{
+  color: #fa741c;
+  padding-bottom:.8vh;
+  font-size: 3vw
+}
+
+.MobileMainContentP{
+  display: none;
+  width: 93%;
+  font-size:3vw
+}

@@ -1,0 +1,488 @@
+
+<div *ngIf="(screenWidth >= 600)" class="HighestSectionDiv" fxLayout="column" fxLayoutAlign="center center">
+
+    <div fxLayout="column" id="headlineContainer" fxLayoutAlign="center center"  fxFlex="23" >
+        <h1 id="SectionH1">Desktop</h1>
+        <p id="subHeadingP">Securely manage your XCASH</p>
+    </div>
+    
+    <div fxLayout="column" fxFlex="70"  id="totalContentContainer" fxLayoutAlign="center center">
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%;" >
+                <div id="firstTabContainer" class="tabButtonContainer">
+                    <button id="firstTab" (click)="divToggle2('Minted'); firstTabColors()" data-w-tab="Tab 1" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131953" class="tabButton"><a id="firstTabA">Windows </a></button>
+                </div>
+            </div>
+
+            
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; " >
+                <div fxLayout="row" fxFlex="100">
+
+                    <div fxFlex="50" *ngIf="divTab2 == 'Minted'"  fxLayout="column" data-w-tab="Tab 1" class="contentContainerPercent" fxLayoutGap="4vh">
+                        
+                        <h3 class="percentage">GUI</h3>
+                        <div>
+                            <h4 class="paragraph">Version</h4>
+                            <p class="paragraph">v0.0.1-alpha</p>
+                        </div>
+
+                        <div style="padding-top:2vh">
+                            <h4 class="paragraph">SHA256</h4>
+                            <p  class="paragraph">D2F4DC59C3E8A2527411D471CE2F5D222D7EC894463647C1B3C20554C0524597</p>
+                        </div>
+
+                        <div>
+                            <h4 class="paragraphH4">⚠️</h4>
+                            <p class="paragraph"> This is an early access alpha release. Please read the instructions before using.</p>
+                        </div>
+
+                        <div id="buttonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/desktop-wallet/releases/download/v0.0.1-alpha/v0.0.1-alpha-xcash-gui-wallet-windows-x64.zip">Download</a></button>
+                        </div>
+                    
+                    </div>
+
+                    
+                    <div *ngIf="divTab2 == 'Minted'" fxFlex="50" fxLayout="column" data-w-tab="Tab 1" class="contentContainerPercent " fxLayoutGap="4vh">
+                        <h3 class="percentage">CLI</h3>
+                        <div>
+                            <h4 class="paragraph">Version</h4>
+                            <p class="paragraph">2.2.0</p>
+                        </div>      
+
+                        <div style="padding-top:2vh" >
+                            <h4 class="paragraph">SHA256</h4>
+                            <p class="paragraph">07d0c709a2d72a81307f71ae7a6e1d0b56f57456f0280fea36edc8e0d9724b11</p>
+                        </div>  
+                        
+                        <div style="padding-top:3vh" id="buttonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/xcash-core/releases/download/2.2.0/xcash-cli-windows-2.2.0.zip">Download</a></button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+                <div class="tabButtonContainer">
+                    <button id="buttonTab2" (click)="divToggle2('Airdrop')" data-w-tab="Tab 2" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131956" class="tabButton"><a>Mac</a></button>
+                </div>
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+                
+                <div fxLayout="row" fxFlex="100">
+
+                    <div fxFlex="50" *ngIf="divTab2 == 'Airdrop'"  fxLayout="column" data-w-tab="Tab 2" class="contentContainerPercent" fxLayoutGap="4vh">
+                        
+                        <h3 class="percentage">GUI</h3>
+                        <div>
+                            <h4 class="paragraph">Version</h4>
+                            <p class="paragraph">v0.0.1-alpha</p>
+                        </div>
+
+                        <div>
+                            <h4 class="paragraph">SHA256</h4>
+                            <p class="paragraph">8486D8B06501B5A5C64C1BB03919C3EF9A5743EA9EF3F5FEDF3B719247000EAB</p>
+                        </div>
+
+                        <div>
+                            <h4 class="paragraphH4">⚠️</h4>
+                            <p class="paragraph"> This is an early access alpha release. Please read the instructions before using.</p>
+                        </div>
+
+                        <div id="buttonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/desktop-wallet/releases/download/v0.0.1-alpha/v0.0.1-alpha-xcash-gui-wallet-osx.zip">Download</a></button>
+                        </div>
+                    </div>
+
+                    <div *ngIf="divTab2 == 'Airdrop'" fxFlex="50" fxLayout="column" data-w-tab="Tab 2" class="contentContainerPercent " fxLayoutGap="4vh">
+                        <h3 class="percentage">CLI</h3>
+                        <div>
+                            <h4 class="paragraph">Version</h4>
+                            <p class="paragraph">2.0.1</p>
+                        </div>      
+
+                        <div style="padding-top:2vh" >
+                            <h4 class="paragraph">SHA256</h4>
+                            <p class="paragraph">C5A0B12E4C7F1DD42C2F267E8690EACF46D667F4B870C8A1E4528AEA6C3E3911</p>
+                        </div>  
+                        
+                        <div style="padding-top:3vh" id="buttonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/xcash-core/releases/download/2.0.1/xcash-cli-osx-2.0.1.zip">Download</a></button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%;"> 
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+          
+                <div class="tabButtonContainer">
+                    <button id="buttonTab3" (click)="divToggle2('Company')" data-w-tab="Tab 3" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131959" class="tabButton"><a>Linux</a></button>
+                </div>
+
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+                <div fxLayout="row" fxFlex="100">
+
+                    <div fxFlex="50" *ngIf="divTab2 == 'Company'"  fxLayout="column" data-w-tab="Tab 3" class="contentContainerPercent" fxLayoutGap="4vh">
+                        
+                        <h3 class="percentage">GUI</h3>
+                        <div>
+                            <h4 class="paragraph">Version</h4>
+                            <p class="paragraph">v0.0.1-alpha</p>
+                        </div>
+
+                        <div>
+                            <h4 class="paragraph">SHA256</h4>
+                            <p class="paragraph">467260CE8061ECF67CE1353813657ADE0754ACF3DBD494CC8EB40B67B26FDFF6</p>
+                        </div>
+
+                        <div>
+                            <h4 class="paragraphH4">⚠️</h4>
+                            <p class="paragraph"> This is an early access alpha release. Please read the instructions before using.</p>
+                        </div>
+
+                        <div id="buttonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/desktop-wallet/releases/download/v0.0.1-alpha/v0.0.1-alpha-xcash-gui-wallet-linux.zip">Download</a></button>
+                        </div>
+                    
+                    </div>
+
+                    
+                    <div *ngIf="divTab2 == 'Company'" fxFlex="50" fxLayout="column" data-w-tab="Tab 3" class="contentContainerPercent " fxLayoutGap="4vh">
+                        <h3 class="percentage">CLI</h3>
+                        <div>
+                            <h4 class="paragraph">Version</h4>
+                            <p class="paragraph">2.2.0</p>
+                        </div>      
+
+                        <div style="padding-top:2vh" >
+                            <h4 class="paragraph">SHA256</h4>
+                            <p class="paragraph">9a3924c8e178ef4a46074e833300bce1fba9afb5efac77933f65f262c360e5a8</p>
+                        </div>  
+                        
+                        <div style="padding-top:3vh" id="buttonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/xcash-core/releases/download/2.2.0/xcash-cli-linux-2.2.0.zip">Download</a></button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; " >
+    
+                <div class="tabButtonContainer">
+                    <button id="buttonTab4" (click)="divToggle2('Investors')" data-w-tab="Tab 4" data-w-id="4c104d8f-d4b0-de6a-b612-ab1343fad515" class="tabButton"><a>Raspberry Pi 4</a></button>
+                </div>
+
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%;">
+            
+                <div fxLayout="row" fxFlex="100">
+
+                    <div fxFlex="50" *ngIf="divTab2 == 'Investors'"  fxLayout="column" data-w-tab="Tab 4" class="contentContainerPercent" fxLayoutGap="4vh">
+                        
+                        <h3 class="percentage">CLI</h3>
+                        <div>
+                            <h4 style="height:70%" class="paragraph">Version</h4>
+                            <p class="paragraph">beta</p>
+                        </div>
+
+                        <div>
+                            <h4 style="height:50%; padding-bottom:1vh" class="paragraph">Description</h4>
+                            <p class="paragraph">Ported for ARM processors. Installation from Zach's autoinstaller script. Recommended for pi-4</p>
+                        </div>
+
+
+                        <div id="buttonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/IdzaMeMario/xcash/archive/refs/heads/main.zip">Download</a></button>
+                        </div>
+                    
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        
+    
+
+</div>
+     
+</div>
+   
+
+<!--Mobile-->      
+
+<div *ngIf="(screenWidth < 600)" class="MobileHighestSectionDiv" fxLayout="column" fxLayoutAlign="center center">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center" fxFlex="23">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">Desktop</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP" style="width:100%;">Securely manage your XCASH</p>
+    </div>
+
+    <div #MobileButtonTabs fxLayout="row" style="width:80%">
+
+        <div fxLayout="row" fxFlex="25" style="width:100%; height: 100%;" >
+            <div id="firstTabContainer" class="tabButtonContainer">
+                <button id="firstTab" (click)="divToggle2('Minted'); firstTabColors()" data-w-tab="Tab 1" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131953" class="tabButton"><a  id="firstTabA">Windows </a></button>
+            </div>
+        </div>
+
+        <div fxLayout="row" fxFlex="25" style="width:100%; height: 100%; ">
+            <div class="tabButtonContainer">
+                <button (click)="divToggle2('Airdrop')" data-w-tab="Tab 2" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131956" class="tabButton"><a>Mac</a></button>
+            </div>
+        </div>
+
+        <div fxLayout="row" fxFlex="25" style="width:100%; height: 100%; ">
+          
+            <div class="tabButtonContainer">
+                <button (click)="divToggle2('Company')" data-w-tab="Tab 3" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131959" class="tabButton"><a>Linux</a></button>
+            </div>
+
+        </div>
+
+        <div fxLayout="row" fxFlex="25" style="width:100%; height: 100%; " >
+    
+            <div class="tabButtonContainer">
+                <button (click)="divToggle2('Investors')" data-w-tab="Tab 4" data-w-id="4c104d8f-d4b0-de6a-b612-ab1343fad515" class="tabButton"><a>Raspberry Pi 4</a></button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--End of Mobile button tabs-->
+    
+    <div fxLayout="column" fxFlex="100"  id="MobileTotalContentContainer" fxLayoutAlign="center center">
+       
+        <div fxLayout="row" fxFlex="100" style="width:100%; height: 100%; " >
+            <div fxLayout="row" fxFlex="100">
+
+                <div fxFlex="50" *ngIf="divTab2 == 'Minted'"  fxLayout="column" data-w-tab="Tab 1" class="contentContainerPercent" fxLayoutGap="2vh">
+                    
+                    <h3 class="MobilePercentage">WIN GUI</h3>
+                    <div>
+                        <h4 class="MobileParagraph">Version</h4>
+                        <p class="MobileParagraph">v0.0.1-alpha</p>
+                    </div>
+
+                    <div style="padding-top:2vh">
+                        <h4 class="MobileParagraph">SHA256</h4>
+                        <p class="MobileParagraphSha">D2F4DC59C3E8A2527411D471CE2F5D2<br>22D7EC894463647C1B3C20554C0524597</p>
+                    </div>
+
+                  
+
+                    <div  id="MobileButtonContainer" fxFlex="10">
+                        <button> <a target="_blank" href="https://github.com/X-CASH-official/desktop-wallet/releases/download/v0.0.1-alpha/v0.0.1-alpha-xcash-gui-wallet-windows-x64.zip">Download</a></button>
+                    </div>
+
+                    <div>
+                        <h4 class="MobileParagraphH4">⚠️</h4>
+                        <p class="MobileParagraph"> This is an early access alpha release. Please read the instructions before using.</p>
+                    </div>
+                
+                </div>
+
+                
+                <div *ngIf="divTab2 == 'Minted'" fxFlex="50" fxLayout="column" data-w-tab="Tab 1" class="contentContainerPercent " fxLayoutGap="2vh">
+                    <h3 class="MobilePercentage">WIN<br> CLI</h3>
+                    <div>
+                        <h4 class="MobileParagraph">Version</h4>
+                        <p class="MobileParagraph">2.2.0</p>
+                    </div>      
+
+                    <div style="padding-top:2vh" >
+                        <h4 class="MobileParagraph">SHA256</h4>
+                        <p class="MobileParagraphSha">07d0c709a2d72a81307f71ae7a6e1d0b<br>56f57456f0280fea36edc8e0d9724b11</p>
+                    </div>  
+                    
+                    <div id="MobileButtonContainer" fxFlex="10">
+                        <button> <a target="_blank" href="https://github.com/X-CASH-official/xcash-core/releases/download/2.2.0/xcash-cli-windows-2.2.0.zip">Download</a></button>
+                    </div>
+                    
+                </div>
+
+            </div>
+       
+        
+        </div>
+
+        <div fxLayout="column" style="width:100%; height: 100%; ">
+        
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+                
+                <div fxLayout="row" fxFlex="100">
+
+                    <div fxFlex="50" *ngIf="divTab2 == 'Airdrop'"  fxLayout="column" data-w-tab="Tab 2" class="contentContainerPercent" fxLayoutGap="2vh">
+                        
+                        <h3 class="MobilePercentage">MAC GUI </h3>
+                        <div>
+                            <h4 class="MobileParagraph">Version</h4>
+                            <p class="MobileParagraph">v0.0.1-alpha</p>
+                        </div>
+
+                        <div style="padding-top:2vh">
+                            <h4 class="MobileParagraph">SHA256</h4>
+                            <p class="MobileParagraphSha">8486D8B06501B5A5C64C1BB03919C3EF<br>9A5743EA9EF3F5FEDF3B719247000EAB</p>
+                        </div>
+
+                        <div id="MobileButtonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/desktop-wallet/releases/download/v0.0.1-alpha/v0.0.1-alpha-xcash-gui-wallet-osx.zip">Download</a></button>
+                        </div>
+
+                        <div>
+                            <h4 class="MobileParagraphH4">⚠️</h4>
+                            <p class="MobileParagraph"> This is an early access alpha release. Please read the instructions before using.</p>
+                        </div>
+
+             
+                    </div>
+
+                    <div *ngIf="divTab2 == 'Airdrop'" fxFlex="50" fxLayout="column" data-w-tab="Tab 2" class="contentContainerPercent " fxLayoutGap="2vh">
+                        <h3 class="MobilePercentage"> MAC CLI</h3>
+                        <div>
+                            <h4 class="MobileParagraph">Version</h4>
+                            <p class="MobileParagraph">2.0.1</p>
+                        </div>      
+
+                        <div style="padding-top:2vh" >
+                            <h4 class="MobileParagraph">SHA256</h4>
+                            <p class="MobileParagraphSha">C5A0B12E4C7F1DD42C2F267E8690EACF<br>46D667F4B870C8A1E4528AEA6C3E3911</p>
+                        </div>  
+                        
+                        <div id="MobileButtonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/xcash-core/releases/download/2.0.1/xcash-cli-osx-2.0.1.zip">Download</a></button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div fxLayout="column" style="width:100%; height: 100%;"> 
+        
+                     
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+                <div fxLayout="row" fxFlex="100">
+
+                    <div fxFlex="50" *ngIf="divTab2 == 'Company'"  fxLayout="column" data-w-tab="Tab 3" class="contentContainerPercent" fxLayoutGap="2vh">
+                        
+                        <h3 class="MobilePercentage">LINUX GUI</h3>
+                        <div>
+                            <h4 class="MobileParagraph">Version</h4>
+                            <p class="MobileParagraph">v0.0.1-alpha</p>
+                        </div>
+
+                        <div>
+                            <h4 style="padding-top:2vh" class="MobileParagraph">SHA256</h4>
+                            <p class="MobileParagraphSha">467260CE8061ECF67CE1353813657ADE0<br>754ACF3DBD494CC8EB40B67B26FDFF6</p>
+                        </div>
+
+                 
+
+                        <div id="MobileButtonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/desktop-wallet/releases/download/v0.0.1-alpha/v0.0.1-alpha-xcash-gui-wallet-linux.zip">Download</a></button>
+                        </div>
+
+                        <div>
+                            <h4 class="MobileParagraphH4">⚠️</h4>
+                            <p class="MobileParagraph"> This is an early access alpha release. Please read the instructions before using.</p>
+                        </div>
+                    
+                    </div>
+
+                    
+                    <div *ngIf="divTab2 == 'Company'" fxFlex="50" fxLayout="column" data-w-tab="Tab 3" class="contentContainerPercent " fxLayoutGap="2vh">
+                        <h3 class="MobilePercentage">LINUX CLI</h3>
+                        <div>
+                            <h4 class="MobileParagraph">Version</h4>
+                            <p class="MobileParagraph">2.2.0</p>
+                        </div>      
+
+                        <div style="padding-top:2vh" >
+                            <h4 class="MobileParagraph">SHA256</h4>
+                            <p class="MobileParagraphSha">9a3924c8e178ef4a46074e833300bce<br>1fba9afb5efac77933f65f262c360e5a8</p>
+                        </div>  
+                        
+                        <div  id="MobileButtonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/X-CASH-official/xcash-core/releases/download/2.2.0/xcash-cli-linux-2.2.0.zip">Download</a></button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div fxLayout="column" style="width:100%; height: 100%; ">
+                     
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%;">
+            
+                <div fxLayout="row" fxFlex="100">
+
+                    <div fxFlex="100" *ngIf="divTab2 == 'Investors'"  fxLayout="column" data-w-tab="Tab 4" class="contentContainerPercent" fxLayoutGap="2vh" >
+                        
+                        <h3 class="MobilePercentage">PI<br> CLI</h3>
+                        <div>
+                            <h4 style="height:70%" class="MobileParagraph">Version</h4>
+                            <p class="MobileParagraph">beta</p>
+                        </div>
+
+                        <div>
+                            <h4 style="height:50%; padding-bottom:1vh" class="MobileParagraph">Description</h4>
+                            <p class="MobileParagraph">Ported for ARM processors. Installation from Zach's autoinstaller script. Recommended for pi-4</p>
+                        </div>
+
+
+                        <div id="MobileButtonContainer" fxFlex="10">
+                            <button> <a target="_blank" href="https://github.com/IdzaMeMario/xcash/archive/refs/heads/main.zip">Download</a></button>
+                        </div>
+                    
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        
+    
+
+</div>
+     
+    
+    
+
+</div>

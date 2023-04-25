@@ -1,0 +1,221 @@
+
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+  <div id="headlineContainer" fxLayout="row" fxLayoutAlign="center center">
+      <h1 id="SectionH1">Metrics</h1>
+  </div>
+
+  <p id="subHeadingP">Unleash The Power Of XCASH Data </p> 
+
+  <div fxLayout="row" fxLayoutGap="1vh" id="totalMetricsContainers" fxLayoutAlign="center center">
+      <div fxLayout="column" fxLayoutGap="1vh" fxFlex="33" class=" ">
+  
+          <div class="metrics-container">
+            <h4>Algo</h4>
+            <div class="metrics-data-container">
+              
+              <div class="chainData">
+                {{blockchain_algorithm}}
+              </div>
+            
+            </div>
+          </div>
+  
+          <div class="metrics-container">
+            <h4>Block Height</h4>
+            <div class="metrics-data-container">
+
+            <div class="chainData">
+              {{block_height | number}}
+            </div>
+
+          </div>
+      
+        </div>
+  
+          <div class="metrics-container">
+
+            <h4>Block Time</h4>
+
+            <div class="metrics-data-container">
+              <div class="chainData">
+                5 Minutes
+              </div>
+
+            </div>
+          </div>
+      </div>
+
+
+  <div fxLayout="column" fxFlex="33" fxLayoutGap="1vh">
+  
+    <div class="metrics-container">
+
+      <h4>Block Reward</h4>
+
+      <div class="metrics-data-container">
+        <div class="chainData">
+          {{ block_reward | number }}
+        </div>
+
+      </div>
+    </div>
+
+      <div class="metrics-container">
+
+        <h4>Max Supply</h4>
+
+        <div class="metrics-data-container">
+
+          <div class="chainData">
+            100,000,000,000
+          </div>
+        </div>
+    </div>
+
+      <div class="metrics-container">
+
+        <h4>Generated Supply</h4>
+
+        <div class="metrics-data-container">
+
+          <div class="chainData">
+            {{generated_supply | number}}
+          </div>
+        </div>
+      </div>
+   
+    </div>
+
+  <div fxLayout="column" fxFlex="33" fxLayoutGap="1vh" class=" ">
+
+            <div class="metrics-container">
+
+              <h4>Circulating Supply</h4>
+              <div class="metrics-data-container">
+
+                <div class="chainData">
+                  {{circulating_supply | number}}
+                </div>
+
+              </div>
+            </div>
+      
+            <div class="metrics-container">
+
+              <h4>Total Private TXs</h4>
+
+              <div class="metrics-data-container">
+
+                <div class="chainData">
+                  {{private_tx_count | number}}
+                </div>
+              </div>
+            </div>
+    
+            <div class="metrics-container">
+
+              <h4>Total Public TXs</h4>
+
+              <div class="metrics-data-container">
+
+                <div class="chainData">
+                  {{public_tx_count | number}}
+                </div>
+              </div>
+    
+            </div>
+        </div>
+      </div>
+
+      <div fxLayout="column" fxFlex="50" style="width:100%; height:100%; transform: translateY(-25vh); overflow: hidden" fxLayoutAlign="start end">
+        <ng-lottie [options]="options" data-default-duration="4.183333333333334" data-duration="0"  width="35vw" height="35vw" data-default-duration="4.183333333333334" data-duration="0"  style="z-index: 0; transform:translateY(-3vh);"></ng-lottie>
+      </div>
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 0vh" class="MobileHighestSectionDiv">
+
+  <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+      <h1 class="ClassMobileSectionH1" id="SectionH1">Metrics</h1>
+      <p class="ClassMobileSubHeadingP" id="subHeadingP">Unleash The Power<br> Of XCASH Data</p>
+  </div>
+
+  <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+      <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+          <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+              <div class="MobileContentContainerMainLanding"> 
+                  <p class="MobilePHeading">Algo</p>
+                  <p class="MobileP">{{blockchain_algorithm}}</p>
+              </div>
+          </div>
+
+          <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+              <div class="MobileContentContainerMainLanding"> 
+                  <p class="MobilePHeading">Block Height</p>
+                  <p class="MobileP"> {{block_height | number}}</p>
+              </div>
+          </div>
+
+          <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+              <div class="MobileContentContainerMainLanding"> 
+                  <p class="MobilePHeading">Block Time</p>
+                  <p class="MobileP">5 Minutes</p>
+              </div>
+          </div>
+
+          <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+              <div class="MobileContentContainerMainLanding"> 
+                  <p class="MobilePHeading">Block Reward</p>
+                  <p class="MobileP">{{ block_reward | number }}</p>
+              </div>
+          </div>
+
+          <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+            <div class="MobileContentContainerMainLanding"> 
+                <p class="MobilePHeading">Max Supply</p>
+                <p class="MobileP">100,000,000,000</p>
+            </div>
+          </div>
+
+        <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+          <div class="MobileContentContainerMainLanding"> 
+              <p class="MobilePHeading">Generated Supply</p>
+              <p class="MobileP"> {{generated_supply | number}}</p>
+          </div>
+        </div>
+
+        <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+          <div class="MobileContentContainerMainLanding"> 
+              <p class="MobilePHeading">Circulating Supply</p>
+              <p class="MobileP">{{circulating_supply | number}}</p>
+          </div>
+        </div>
+
+        <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+          <div class="MobileContentContainerMainLanding"> 
+              <p class="MobilePHeading">Total Private TXs</p>
+              <p class="MobileP">{{private_tx_count | number}}</p>
+          </div>
+        </div>
+
+        <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+          <div class="MobileContentContainerMainLanding"> 
+              <p class="MobilePHeading">Total Public TXs</p>
+              <p class="MobileP">{{public_tx_count | number}}</p>
+          </div>
+        </div>
+      
+      </div>
+
+  </div>
+
+  <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;" fxLayoutAlign="center center">
+    <ng-lottie [options]="options" id="lottie1" width="65vw" height="65vw" style="z-index: 0; transform:translate(-3vw, 5vh);"></ng-lottie>
+</div>
+
+</div>

@@ -1,0 +1,110 @@
+<div *ngIf="(screenWidth >= 600)" fxLayout="column" fxLayoutAlign="center center" class="HighestSectionDiv">
+
+    <div id="headlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="SectionH1">WXCASH</h1>
+    </div>
+    
+    <p id="subHeadingP">Trade XCASH on Polygon</p>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%">
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; "></div>
+
+        <div fxLayout="column" fxFlex="60" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign=" start center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center">
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Connection</p>
+                    <p class="mainContentP">WXCASH enables swift network teleportation. Plugged into Ethereum's Polygon L2, XCASH users hop between multiple networks at will.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Swap X Exclusive</p>
+                    <p class="mainContentP">Swap your XCASH to WXCASH instant and free in the Swap Shop.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Access to DEX</p>
+                    <p class="mainContentP">WXCASH is listed on Quickswap and traded via XCASH/QUICK.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="contentContainerMainLanding"> 
+                    <p id="pHeading">Contract</p>
+                    <p class="mainContentP"> <a class="landingLink" target="_blank" href="https://polygonscan.com/token/0x03678f2c2c762dc63c2bb738c3a837d366eda560">0x03678f2c2c762dc63c2bb738c3a837d366eda560</a></p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(-4vw);" fxLayoutAlign="end end">
+            <ng-lottie [options]="options" id="lottie1" width="18vw" height="18vw" style="z-index: 0; transform:translateY(0vh);"></ng-lottie>
+        </div>
+
+    </div>
+
+    <div fxLayout="row" id="buttonContainer" fxFlex="60" fxLayoutAlign="start start">
+        <button><a class="landingLink" class="landingLink MobileLandingLink" target="_blank" href="https://docs.xcash.foundation/applications/wxcash">Read About WXCASH</a></button>
+    </div>
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" fxLayout="column" fxLayoutAlign="center center" style="padding-bottom: 4vh" class="MobileHighestSectionDiv">
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="SectionH1">WXCASH</h1>
+        <p class="ClassMobileSubHeadingP" id="subHeadingP">Trade XCASH on Polygon</p>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" style="width:100%; height:100%" fxLayoutAlign="center center">
+
+        <div fxLayout="column" fxFlex="70" id="mainContent" style="width:100%; height: 100%;" fxLayoutAlign="center center">
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding">
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Connection</p>
+                    <p class="MobileP">WXCASH enables swift network teleportation. Plugged into Ethereum's Polygon L2, XCASH users hop between multiple networks at will.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Swap x Exclusive</p>
+                    <p class="MobileP">Swap your XCASH to WXCASH instant and free in the Swap Shop.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Access to DEX</p>
+                    <p class="MobileP">WXCASH is listed on Quickswap and traded via XCASH/QUICK.</p>
+                </div>
+            </div>
+
+            <div fxLayout="column" id="mainContentContainer" fxLayoutAlign="center center" class="topDivContentContainerLanding"> 
+                <div class="MobileContentContainerMainLanding"> 
+                    <p class="MobilePHeading">Contract</p>
+                    <p class="MobileP"><a class="landingLink MobileLandingLink contractLinkMobile" target="_blank" href="https://polygonscan.com/token/0x03678f2c2c762dc63c2bb738c3a837d366eda560">0x03678f2c2c762dc63c2bb738c3a837d366eda560</a></p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div fxLayout="row" class="MobileButtonContainer" fxFlex="60" style="padding-bottom: 4vh" fxLayoutAlign="start start">
+        <button class="MobileButton"><a class="landingLink MobileLandingLink" target="_blank" href="https://docs.xcash.foundation/applications/wxcash">Read About WXCASH</a></button>
+    </div>
+
+    <div fxLayout="column" fxFlex="20" style="width:100%; height: 100%; overflow: hidden;  transform: translateX(0vw);" fxLayoutAlign="center center">
+        <ng-lottie [options]="options" id="lottie1" width="25vw" height="25vw" style="z-index: 0; transform:translateY(0vh);"></ng-lottie>
+    </div>
+
+</div>

@@ -1,0 +1,63 @@
+<div *ngIf="(screenWidth >= 600)" class="HighestSectionDiv" fxLayoutAlign="center center"  fxFlex="100" fxLayout="row">
+    
+    <div fxLayout="column" fxFlex="33" fxLayoutAlign="center center" style="width:100%; height: 100%;">
+        <ng-lottie id="lottieL" [options]="optionsLeft" width="27.2vw" height="28vw" style="transform:translate(0vw, 14vh)"></ng-lottie>
+    </div>
+
+    <div fxLayout="column" fxFlex="33" fxLayoutAlign="center center" style="width:100%; height:100%;">
+        <div fxLayout="column" fxFlex="40" fxLayoutAlign="center center" class="animatedlogoContainerParent">
+
+            <div id="animatedlogoContainer">
+                <img id="animatedlogo" src="../../assets/newLogo4.svg" alt="">
+            </div>
+
+            <!--Removed Text-->
+            <!--div id="logoTextAnimatedGGrandparent">
+                <h4 id="logoTextAnimated">
+                    <div id="logoTextDirectParent">
+                        <span style="color: #f1741c">X</span>CASH
+                    </div>
+                </h4>
+            </div-->
+        </div>
+
+        <div fxFlex="60" id="headingContainer" fxLayout="row" fxLayoutAlign="center start">
+            <h1 id="heading">Contribute</h1>
+        </div>
+    </div>
+
+    <div fxLayout="column" fxFlex="33" fxLayoutAlign="center start" style="width:100%; height: 100%; transform: scaleX(-1)">
+        <ng-lottie [options]="optionsRight" width='60vw' height="60vw" id="lottieR" style=" transform:translate(-8vw, 14vh) "></ng-lottie>
+    </div>
+
+</div>
+
+<!--Mobile-->
+
+<div *ngIf="(screenWidth < 600)" class="MobileHighestSectionDiv" fxLayoutAlign="center center" fxFlex="100" fxLayout="column">
+    
+    <div fxLayout="column" fxFlex="40" style="width:100%; height:100%;" fxLayoutAlign="center end">
+        <ng-lottie aria-label="An animation of a man working on a computer, in orange" [options]="optionsLeft" width="55vw" height="55vw" style="z-index: 0;  transform: scaleX(-1) translateX(14vw)"></ng-lottie>
+    </div>
+
+    <div fxLayout="column" fxFlex="20" fxLayoutAlign="center center" id="mobileCenterContainer" style=" position:relative; width:100%; height:100%;" >
+        <div fxFlex="100" id="MobileHeadingContainer" fxLayout="row" fxLayoutAlign="center center">
+            <h1 class="Mobileh1" id="heading">Contribute</h1>
+        </div>
+
+        <div fxLayout="column" fxFlex="40" fxLayoutAlign="center center" class="MobileAnimatedSvgContainer">
+            <svg id="MobileAnimatedlogo"  version="1.1" viewBox="0 0 65.13759 63.29874" xmlns="http://www.w3.org/2000/svg">
+                <g transform="matrix(13.1544 13.1544 -13.1544 13.1544 -780.2316 -1489.281)" style="fill:none;stroke:#fa741c">
+                 <path transform="matrix(-.00168257 -.9999986 .9983408 -.05758155 0 0)" d="m-30.11932 88.83404a1.911048 1.073049 0 0 1-1.970029 1.037252 1.911048 1.073049 0 0 1-1.850177-1.104647 1.911048 1.073049 0 0 1 1.964612-1.040487 1.911048 1.073049 0 0 1 1.855929 1.101601" style="fill:none;font-variation-settings:'wdth' 121.8, 'wght' 886;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:.352968;stroke:#fa741c"/>
+                 <path transform="matrix(-.9999986 -.00168257 -.05758155 .9983408 0 0)" d="m-88.33912 26.84398a1.911048 1.073049 0 0 1-1.970029 1.037252 1.911048 1.073049 0 0 1-1.850177-1.104648 1.911048 1.073049 0 0 1 1.964612-1.040486 1.911048 1.073049 0 0 1 1.85593 1.101601" style="fill:none;font-variation-settings:'wdth' 121.8, 'wght' 886;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:.352968;stroke:#fa741c"/>
+                </g>
+               </svg>
+        </div>
+    </div>
+
+    <div fxLayout="column" fxFlex="40" style="width:100%; overflow: hidden;" fxLayoutAlign="center center">
+        <ng-lottie aria-label="An animation of a city scape with people using technology, in blue" [options]="optionsRight" width="128vw" height="128vw"  style="z-index: 0;  transform:scaleX(1) translateX(2.5vw) "></ng-lottie>
+    </div>
+
+</div>
+

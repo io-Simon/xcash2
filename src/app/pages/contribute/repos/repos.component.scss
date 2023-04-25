@@ -1,0 +1,113 @@
+h1{
+    font-size: 9vw;
+    width: 100%;
+    text-align: center;
+    padding-bottom:8vh;
+    color:#fa741c;
+    font-family: 'Archivo', sans-serif;
+}
+p{
+    width:100%;
+}
+
+.repoContainerRow{
+    height:100%; 
+    width: 70%
+}
+
+.repoContainer{
+    border: #fa741c 1px solid;
+    height:100%; 
+    width:100%
+}
+h4{
+    padding-top: 1vh;
+    padding-bottom:1.5vh;
+    padding-left:.5vw;
+    color: #fa741c;
+    font-size:1.2vw
+
+}
+
+.landingLink{
+    padding-top: 0.4vh;
+}
+
+.statsContainer{
+    height:100%; 
+    width:100%; 
+    padding-left: 3vw; 
+    padding-bottom:2vh
+}
+
+.repoDescriptionP{
+   padding-left:1vw;
+   padding-right: 1vw;
+   font-size: 1.2vw
+}
+.ClassMobileSubHeadingP{
+    font-size:2vw !important
+}
+
+#MobileSectionH1{
+    font-family: 'Archivo', sans-serif;
+    color:#fa741c;
+    font-size: 9vw;
+    font-weight:800 !important;
+    letter-spacing: 4px;
+    text-align: center;
+    width:45%;
+    background: none;
+    height:30% !important
+  }
+  #MobileheadlineContainer{
+    width:100%; 
+    height:20%;
+    padding-bottom:1vh
+  }
+
+  .ClassMobileSectionH1{
+    width:100% !important;
+    height:20% !important
+  }
+  
+
+  .MobileButton{
+    height: 3vh;
+    font-size: .8vh;
+    padding-top:0.1vh;
+  }
+
+
+
+  button{
+    border: #fa741c solid 1px;
+    box-shadow: 0 0 1px rgba(250, 117, 28, 0.629)  ;
+  }
+
+ .MobileH4{
+    padding-top: 1vh;
+    padding-bottom:1.5vh;
+    padding-left:.5vw;
+    color: #fa741c;
+    font-size:2vw
+
+}
+
+.MobileRepoDescriptionP{
+    padding-left:1vw;
+    padding-right: 1vw;
+    font-size: 1.9vw;
+    text-align: center;
+ }
+
+ .MobileStatsContainer{
+    height:100%; 
+    width:100%; 
+    padding-left: 13vw; 
+    padding-bottom:2vh
+}
+
+.MobileHighestSectionDiv{
+    padding-top:4vh
+}

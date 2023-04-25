@@ -1,0 +1,38 @@
+<div id="scrollMethodDiv" (scroll)=" onScroll($event); onWindowScroll() ">
+    <app-project-landing></app-project-landing>
+    <div #bottomNav id="bottomNav" fxLayout="column">
+        <div id="bottomNavButtonContainer" fxLayout="row" fxFlex="100">
+            <button id="backgroundButton" aria-label="navigation button to Project Background Section" fxFlex.xs="27" (click)="scrollToSection(background)"> <span ngClass.xs="mobileBottomNavButton">Background</span> </button>
+            <button aria-label="navigation button to Consensus Section" fxFlex.xs="21"  id="governanceButton" (click)="scrollToSection(governance)"><span ngClass.xs="mobileBottomNavButton">Consensus</span> </button>
+            <button aria-label="navigation button to Tech Section" fxFlex.xs="12"  id="techButton" (click)="scrollToSection(tech)"><span ngClass.xs="mobileBottomNavButton">Tech</span> </button>
+            <button aria-label="navigation button to Roadmap Section" fxFlex.xs="19"  id="roadmapButton" (click)="scrollToSection(roadmap)"> <span ngClass.xs="mobileBottomNavButton">Roadmap</span> </button>
+            <button aria-label="navigation button to Coin Allocation Section" fxFlex.xs="11"  id="coinButton" (click)="scrollToSection(coin)"> <span ngClass.xs="mobileBottomNavButton">Coin</span> </button>
+            <button aria-label="navigation button to the Go Further Section" fxFlex.xs="15"  id="gofurtherButton" (click)="scrollToSection(gofurther)"> <span ngClass.xs="mobileBottomNavButton">Further</span> </button>
+        </div>
+    </div>
+
+    <div #background>
+        <app-project-background></app-project-background>
+    </div>
+
+    <div #governance>
+        <app-governance></app-governance>
+    </div>
+
+    <div #tech>
+        <app-tech></app-tech>
+    </div>
+
+    <div #roadmap>
+        <app-roadmap></app-roadmap>
+    </div>
+
+   <div #coin>
+        <app-coin></app-coin>
+   </div>
+
+   <div #gofurther>
+        <app-go-further></app-go-further>
+   </div>
+    
+</div>

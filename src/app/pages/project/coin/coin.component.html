@@ -1,0 +1,284 @@
+
+<div *ngIf="(screenWidth >= 600)" class="HighestSectionDiv" fxLayout="column" fxLayoutAlign="center center">
+
+    <div fxLayout="column" id="headlineContainer" fxLayoutAlign="center center"  fxFlex="23" >
+        <h1 id="SectionH1">Coins</h1>
+        <p id="subHeadingP">Understanding Coin Distribution & Reserve-Proof Verification</p>
+    </div>
+    
+    <div fxLayout="column" fxFlex="70"  id="totalContentContainer" fxLayoutAlign="center center">
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%;" >
+                <div id="firstTabContainer" class="tabButtonContainer">
+                    <button id="firstTab" (click)="divToggle2('Minted'); firstTabColors()" data-w-tab="Tab 1" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131953" class="tabButton"><a>To Be Minted </a></button>
+                </div>
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; " >
+            
+                <div *ngIf="divTab2 == 'Minted'" data-w-tab="Tab 1" class="contentContainerPercent ">
+                    <h3 class="percentage">60%</h3>
+                    <p class="paragraph">XCASH are minted at every block creation by elected delegates. The reward from block creation is redistributed to voters as a ratio of their vote.</p>
+                </div>
+            
+            </div>
+        
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Airdrop')" data-w-tab="Tab 2" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131956" class="tabButton"><a>Airdrop</a></button>
+                </div>
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+
+                <div  *ngIf="divTab2 == 'Airdrop'" data-w-tab="Tab 2" class="contentContainerPercent ">
+                    <h3 class="percentage">14.2%</h3>
+                    <p class="paragraph">Has been distributed through a two-year long airdrop program, starting in 2018.<br>Now completed, these coins are part of the circulating supply.</p>
+                    </div>
+            
+            </div>
+        
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%;"> 
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+          
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Company')" data-w-tab="Tab 3" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131959" class="tabButton"><a>Company</a></button>
+                </div>
+
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+            
+                
+                <div  *ngIf="divTab2 == 'Company'" data-w-tab="Tab 3" class="contentContainerPercent ">
+                    <h3 class="percentage">10%</h3>
+                    <p class="paragraph">These funds have been used by the company to further the development of XCASH. All decisions about the unlocking of these funds will be made public.</p>
+                    </div>
+            
+            </div>
+
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; " >
+    
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Investors')" data-w-tab="Tab 4" data-w-id="4c104d8f-d4b0-de6a-b612-ab1343fad515" class="tabButton"><a>Private Investors</a></button>
+                </div>
+
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%;">
+            
+                <div  *ngIf="divTab2 == 'Investors'" data-w-tab="Tab 4" class="contentContainerPercent ">
+                    <h3 class="percentage">5%</h3>
+                    <p class="paragraph">The private investors fund was designed to enable large quantity investments of XCASH in the initial steps of the project. It has now been mostly depleted.</p>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%;">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+        
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Team')" data-w-tab="Tab 5" data-w-id="dd38bd82-301b-c005-930d-fbba474d4ff3" class="tabButton"><a>Team</a></button>
+                </div>
+
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+            
+                <div  *ngIf="divTab2 == 'Team'" data-w-tab="Tab 5" class="contentContainerPercent ">
+                    <h3 class="percentage">5%</h3>
+                    <p class="paragraph">These rewards are locked until several market capitalization milestones are reached. Every time the market capitalization of XCASH is multiply by 10, starting at 10M USD market cap, 20% of the reward is unlocked.</p>
+                </div>
+            
+            </div>
+        
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%;">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+          
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Contributor')" data-w-tab="Tab 6" class="tabButton"><a>Contributor Fund</a></button>
+                </div>
+
+                
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+            
+                <div *ngIf="divTab2 == 'Contributor'" data-w-tab="Tab 6" class="contentContainerPercent ">
+                    <h3 class="percentage">5.8%</h3>
+                    <p class="paragraph">The contributor fund is used for funding projects, bounties, and specific development tasks of the XCASH project.<br>This fund is managed by the XCASH Foundation</p>
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </div>
+        <div id="buttonContainer" fxFlex="10">
+            <button> <a target="_blank" href="https://explorer.xcash.foundation/SegregatedFunds">Check Reserve Proofs</a></button>
+        </div>
+    
+</div>
+   
+<!--Mobile--> 
+
+
+<div *ngIf="(screenWidth < 600)" class="HighestSectionDiv" fxLayout="column" fxLayoutAlign="center center">
+
+
+    <div id="MobileheadlineContainer" fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="ClassMobileSectionH1" id="MobileSectionH1">Coins</h1>
+        <p class="ClassMobileSubHeadingP" id="MobileSubHeadingP">Understanding Coin Distribution & Reserve-Proof Verification</p>
+      </div>
+    
+    <div fxLayout="column" fxFlex="70"  id="totalContentContainer" fxLayoutAlign="center center">
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%;" >
+                <div id="firstTabContainer" class="tabButtonContainer">
+                    <button id="firstTab" (click)="divToggle2('Minted'); firstTabColors()" data-w-tab="Tab 1" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131953" class="MobileTabButton"><a id="firstTabA">To Be Minted </a></button>
+                </div>
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; " >
+            
+                <div *ngIf="divTab2 == 'Minted'" data-w-tab="Tab 1" class="contentContainerPercent ">
+                    <h3 class="percentage">60%</h3>
+                    <p class="MobileParagraph">XCASH are minted at every block creation by elected delegates. The reward from block creation is redistributed to voters as a ratio of their vote.</p>
+                </div>
+            
+            </div>
+        
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Airdrop')" data-w-tab="Tab 2" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131956" class="MobileTabButton"><a>Airdrop</a></button>
+                </div>
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+
+                <div  *ngIf="divTab2 == 'Airdrop'" data-w-tab="Tab 2" class="contentContainerPercent ">
+                    <h3 class="percentage">14.2%</h3>
+                    <p class="MobileParagraph">Has been distributed through a two-year long airdrop program, starting in 2018.<br>Now completed, these coins are part of the circulating supply.</p>
+                    </div>
+            
+            </div>
+        
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%;"> 
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+          
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Company')" data-w-tab="Tab 3" data-w-id="2172bc24-2c69-8319-5c21-f7c83c131959" class="MobileTabButton"><a>Company</a></button>
+                </div>
+
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+            
+                
+                <div  *ngIf="divTab2 == 'Company'" data-w-tab="Tab 3" class="contentContainerPercent ">
+                    <h3 class="percentage">10%</h3>
+                    <p class="MobileParagraph">These funds have been used by the company to further the development of XCASH. All decisions about the unlocking of these funds will be made public.</p>
+                    </div>
+            
+            </div>
+
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%; ">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; " >
+    
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Investors')" data-w-tab="Tab 4" data-w-id="4c104d8f-d4b0-de6a-b612-ab1343fad515" class="MobileTabButton"><a>Private Investors</a></button>
+                </div>
+
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%;">
+            
+                <div  *ngIf="divTab2 == 'Investors'" data-w-tab="Tab 4" class="contentContainerPercent ">
+                    <h3 class="percentage">5%</h3>
+                    <p class="MobileParagraph">The private investors fund was designed to enable large quantity investments of XCASH in the initial steps of the project. It has now been mostly depleted.</p>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%;">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+        
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Team')" data-w-tab="Tab 5" data-w-id="dd38bd82-301b-c005-930d-fbba474d4ff3" class="MobileTabButton"><a>Team</a></button>
+                </div>
+
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+            
+                <div  *ngIf="divTab2 == 'Team'" data-w-tab="Tab 5" class="contentContainerPercent ">
+                    <h3 class="percentage">5%</h3>
+                    <p class="MobileParagraph">These rewards are locked until several market capitalization milestones are reached. Every time the market capitalization of XCASH is multiply by 10, starting at 10M USD market cap, 20% of the reward is unlocked.</p>
+                </div>
+            
+            </div>
+        
+        </div>
+
+        <div fxLayout="row" style="width:100%; height: 100%;">
+        
+            <div fxLayout="row" fxFlex="30" style="width:100%; height: 100%; ">
+          
+                <div class="tabButtonContainer">
+                    <button (click)="divToggle2('Contributor')" data-w-tab="Tab 6" class="MobileTabButton"><a>Contributor<br>Fund</a></button>
+                </div>
+
+                
+            </div>
+                 
+            <div fxLayout="row" fxFlex="70" style="width:100%; height: 100%; ">
+            
+                <div *ngIf="divTab2 == 'Contributor'" data-w-tab="Tab 6" class="contentContainerPercent ">
+                    <h3 class="percentage">5.8%</h3>
+                    <p class="MobileParagraph">The contributor fund is used for funding projects, bounties, and specific development tasks of the XCASH project.<br>This fund is managed by the XCASH Foundation</p>
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </div>
+        <div id="buttonContainer" fxFlex="10">
+            <button> <a target="_blank" href="https://explorer.xcash.foundation/SegregatedFunds">Check Reserve Proofs</a></button>
+        </div>
+    
+</div>

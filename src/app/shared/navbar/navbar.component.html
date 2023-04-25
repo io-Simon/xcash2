@@ -1,0 +1,63 @@
+<ng-container> 
+  
+    <div id="navbar" class="nav" ngStyle.xs="backdrop-filter: blur(0px)" ngClass.gt-xs="navLarge" fxLayout='row' fxLayoutAlign="start center" >
+        
+        <div id="buttonMenu" fxLayoutAlign="start" *ngIf="(screenWidth < 600)" (click)="toggleSidenav(); " aria-label="Click this to open the Mobile menu. It is a burger menu icon." ><mat-icon aria-label="Click this to open the Mobile menu. It is a burger menu icon." id="matMenu">menu</mat-icon></div>
+
+        <div fxFlex.lt-sm="0%" fxFlex="2%"></div>
+        <span aria-label="This is an image of our logo" fxLayoutAlign.lt-md="center center" ngClass.lt-sm="logoMove" class="logo" routerLink='home' fxHide.lt-sm ><img  style="width:25%;height:25%" src="/assets/newLogo4.svg" alt=""></span>
+
+        <!--Large screen buttons-->
+
+        <div fxFlex="90" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end" *ngIf="(screenWidth >= 600)">
+            <div aria-label="This is a link to our project page." role="button"  class="linkButtons navLinksFont" (click)="NavigateToRoute('')" >Home</div>          
+            <div aria-label="This is a link to our project page." role="button"  class="linkButtons navLinksFont" (click)="NavigateToRoute('project')" >Project</div>          
+            <div aria-label="This is a link to our XCASH's Medium." role="button"  class="linkButtons navLinksFont"><a style="padding:0; margin:0; color: white; text-decoration: none;" target="_blank" href="https://medium.com/x-cash">Blog</a> </div>
+            <div aria-label="This is a link to our wallet page." role="button"  class="linkButtons navLinksFont" (click)="NavigateToRoute('wallet')" >Wallets</div>
+            <div aria-label="This is a link to our tools page." role="button" (click)="revealTools()"  class="linkButtons navLinksFont">Tools</div>
+            <div aria-label="This is a link to our Documentation." role="button"  class="linkButtons navLinksFont"><a style="padding:0; margin:0; color: white; text-decoration: none;" target="_blank" href="https://docs.xcash.foundation/">Docs</a> </div>
+            <div aria-label="This is a link to our contribution join page." role="button"  class="linkButtons navLinksFont" (click)="NavigateToRoute('contribute')" >Join Us</div>
+
+        </div>
+      
+        <div fxFlex="7%"></div>
+
+    </div>
+
+</ng-container>
+
+<mat-sidenav-container *ngIf="(screenWidth < 600)"  [hasBackdrop]="true" >
+    <!--Small screen buttons-->
+    <mat-sidenav #sidenav mode="over" fxlayout="column" fxHide.gt-xs >
+        <mat-nav-list fxLayout="column" style="background: black"  fxLayoutAlign="center center">
+            <a class="sideNavSideNavLink" aria-label="This is a link back to our Project Protocol page. It is only visible on small screen." fxLayoutAlign="center center" mat-list-item (click)="sidenav.toggle(); NavigateToRoute('project')">Project</a>
+            <!--a class="sideNavSideNavLink" aria-label="This is a link to our services page. It is only visible on small screen."routerLink='services' fxLayoutAlign="center center" mat-list-item (click)="sidenav.toggle()">People</a-->
+            <a class="sideNavSideNavLink" aria-label="This is a link to our Blog. It is only visible on small screen." fxLayoutAlign="center center" target="_blank" href="https://medium.com/x-cash" mat-list-item (click)="sidenav.toggle()">Blog</a>
+            <a class="sideNavSideNavLink" aria-label="This is a link to our wallets page. It is only visible on small screen."  fxLayoutAlign="center center" mat-list-item (click)="sidenav.toggle(); NavigateToRoute('wallet')">Wallets</a>
+            <div id="MobileToolsContainer" >
+                <a id="mobileToolsButton" class="sideNavSideNavLink" aria-label="This is a link to open the tools menu."  fxLayoutAlign="center center" mat-list-item (click)="mobileToolsToggle()">Tools</a>
+                <ul *ngIf="mobileToolsBool" fxLayout="row" style="color:white" id="toolsMobile" fxLayoutGap="0vw" fxLayoutAlign="center center">
+                    <li role="button" aria-label="A link to the Blockchain explorer"   fxFlex="20" class="Mobileli"><a style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block; font-size: 2vh; color:#fa741c" href="https://explorer.xcash.foundation/" target="_blank" >Block Explorer</a> </li>
+                    <li role="button" aria-label="A link to the Delegate Explorer"  fxFlex="24" class="Mobileli"><a style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block; font-size: 2vh; color:#fa741c" href="http://delegates.xcash.foundation/" target="_blank" >Delegate Explorer</a> </li>
+                    <li role="button" aria-label="A link to the project Github"  fxFlex="16" id="MobileliGithub" class="Mobileli"><a style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block; font-size: 2vh; color:#fa741c" href="https://github.com/X-CASH-official" target="_blank" >Github</a> </li>
+                    <!--li role="button" aria-label="A link to the Media pack"   fxFlex="20" class="Mobileli"><a href="https://xcash.foundation/mediakit" target="_blank" style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block; font-size: 2vh; color:#fa741c" >Media Pack</a> </li-->
+                    <li role="button"  aria-label="A link to the Daemon list" fxFlex="20" class="Mobileli"><a href="https://xcash.network/" target="_blank" rel="noopener noreferrer" style="padding: 0; margin: 0; text-decoration: none; color: unset; display: block; font-size: 2vh; color:#fa741c"> Daemon List</a></li>
+                </ul>
+            </div>   
+            <!--a class="sideNavSideNavLink" aria-label="This is a link to our about page. It is only visible on small screen." routerLink='about' fxLayoutAlign="center center" mat-list-item (click)="sidenav.toggle()">Services</a-->
+            <a class="sideNavSideNavLink" aria-label="This is a link to our about page. It is only visible on small screen."  fxLayoutAlign="center center" target="_blank" href="https://docs.xcash.foundation/" mat-list-item (click)="sidenav.toggle()">Docs</a>
+            <a class="sideNavSideNavLink" aria-label="This is a link to our about page. It is only visible on small screen." fxLayoutAlign="center center" mat-list-item (click)="sidenav.toggle(); NavigateToRoute('contribute')">Join&nbsp;Us</a>
+            <a class="sideNavSideNavLink" aria-label="This is a link back to our homepage. It is only visible on small screen." fxLayoutAlign="center center" mat-list-item  (click)="sidenav.toggle(); NavigateToRoute('')">Home</a>
+            <a class="sideNavSideNavLink" aria-label="This button closes the mobile menu." class="close" fxLayoutAlign="center center" mat-list-item (click)="sidenav.toggle()" style=" color:red;"> X</a>
+        </mat-nav-list> 
+    </mat-sidenav>
+
+    <mat-sidenav-content *ngIf="(screenWidth >= 600)">
+        <!--May not need this mat-sidenav-content selector-->
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>
+
+
+
+  
