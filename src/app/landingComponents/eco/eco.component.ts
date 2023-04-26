@@ -9,7 +9,7 @@ import { AnimationOptions } from 'ngx-lottie';
 export class EcoComponent implements OnInit {
 
   options: AnimationOptions = {
-    path: '../assets/documents/vote_dark.json',
+    path: '../assets/documents/team_gears.json',
   };
   public screenWidth: number = screen.width
 
