@@ -10,7 +10,7 @@ export class PublicTX2Component implements OnInit {
 
   public screenWidth: number = screen.width
   options: AnimationOptions = {
-    path: '../assets/documents/boysit_cropped.json',
+    path: '../assets/documents/boysit_cropped.json', 
   };
 
   constructor() { }

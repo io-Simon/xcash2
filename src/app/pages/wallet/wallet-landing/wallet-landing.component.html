@@ -1,7 +1,7 @@
 <div *ngIf="(screenWidth >= 600)" class="HighestSectionDiv" fxLayoutAlign="center center"  fxFlex="100" fxLayout="row">
     
     <div fxLayout="column" fxFlex="33" fxLayoutAlign="center center" style="width:100%; height: 100%;">
-        <ng-lottie id="lottieL" [options]="optionsLeft" width="60vw" height="60vw" style="transform:translate(5vw, 14vh)"></ng-lottie>
+        <ng-lottie  aria-label="An animation of a person at an ATM machine" id="lottieL" [options]="optionsLeft" width="60vw" height="60vw" style="transform:translate(5vw, 14vh)"></ng-lottie>
     </div>
 
     <div fxLayout="column" fxFlex="33" fxLayoutAlign="center center" style="width:100%; height:100%;">
@@ -26,7 +26,7 @@
     </div>
 
     <div fxLayout="column" fxFlex="33" fxLayoutAlign="center start" style="width:100%; height: 100%; transform:scaleX(-1); ">
-        <ng-lottie [options]="optionsRight" width='60vw' height="60vw" id="lottieR" style=" transform:translate(-8vw, 14vh)"></ng-lottie>
+        <ng-lottie aria-label="An animation of a person at an ATM machine" [options]="optionsRight" width='60vw' height="60vw" id="lottieR" style=" transform:translate(-8vw, 14vh)"></ng-lottie>
     </div>
 
 </div>
@@ -36,7 +36,7 @@
 <div *ngIf="(screenWidth < 600)" class="MobileHighestSectionDiv" fxLayoutAlign="center center" fxFlex="100" fxLayout="column">
     
     <div fxLayout="column" fxFlex="40" style="width:100%; height:100%;" fxLayoutAlign="center start">
-        <ng-lottie aria-label="An animation of a man working on a computer, in orange" [options]="optionsLeft" width="128vw" height="128vw" style="z-index: 0;  transform: scaleX(-1) translateX(10vw)"></ng-lottie>
+        <ng-lottie aria-label="An animation of a person at an ATM machine" [options]="optionsLeft" width="128vw" height="128vw" style="z-index: 0;  transform: scaleX(-1) translateX(10vw)"></ng-lottie>
     </div>
 
     <div fxLayout="column" fxFlex="20" fxLayoutAlign="center center" id="mobileCenterContainer" style="position:relative; width:100%; height:100%;" >
@@ -55,7 +55,7 @@
     </div>
 
     <div fxLayout="column" fxFlex="40" style="width:100%; overflow: hidden;" fxLayoutAlign="center end">
-        <ng-lottie aria-label="An animation of a city scape with people using technology, in blue" [options]="optionsRight" width="128vw" height="128vw"  style="z-index: 0;  transform:scaleX(1) translateX(10vw) "></ng-lottie>
+        <ng-lottie aria-label="An animation of a person at an ATM machine" [options]="optionsRight" width="128vw" height="128vw"  style="z-index: 0;  transform:scaleX(1) translateX(10vw) "></ng-lottie>
     </div>
 
 </div>

@@ -9,7 +9,7 @@ import { AnimationOptions } from 'ngx-lottie';
 export class XPyComponent implements OnInit {
   public screenWidth: number = screen.width
   options: AnimationOptions = {
-    path: '../assets/documents/data_dark.json',
+    path: '../assets/documents/boysit_cropped.json',
   };
 
 

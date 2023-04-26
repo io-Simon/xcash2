@@ -9,7 +9,7 @@ import { AnimationOptions } from 'ngx-lottie';
 export class WxcashComponent implements OnInit {
   public screenWidth: number = screen.width
   options: AnimationOptions = {
-    path: '../assets/documents/data_dark.json',
+    path: '../assets/documents/vote_dark.json',
   };
 
   constructor() { }

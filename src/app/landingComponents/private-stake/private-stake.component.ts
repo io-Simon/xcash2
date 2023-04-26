@@ -9,7 +9,7 @@ import { AnimationOptions } from 'ngx-lottie';
 export class PrivateStakeComponent implements OnInit {
   public screenWidth: number = screen.width
   options: AnimationOptions = {
-    path: '../assets/documents/vote_dark.json',
+    path: '../assets/documents/actuality_dark_nogrid.json',
   };
 
   constructor() { }
